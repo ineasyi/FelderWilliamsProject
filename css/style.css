@@ -280,10 +280,10 @@ body {
 }
 .grid
 {
-	width: 28%;
-	float: left;
+	width: 40%;
+	margin: 0 auto;
 	background: #FFF;
-	margin-right: 8%;
+	
 }
 .dc_zoom_css span.roll_css6:hover {
 	opacity: 0.9;
