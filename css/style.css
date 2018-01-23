@@ -82,6 +82,22 @@ body {
 	background:  url('../images/banner.jpg') no-repeat;
 	background-size: 100% 100%;
 }
+
+.slider_bgInvolved{
+	background:  url('../images/childeyes_getinvolved.webp') no-repeat;
+	background-size: 100% 100%;
+}
+
+.slider_bgdonate{
+	background:  url('../images/sonnykids.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.slider_bgabout{
+	background:  url('../images/band.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
 .da-slide {
 	padding: 11% 0%;
 }
@@ -116,6 +132,19 @@ body {
 	text-align: center;
 	padding: 1em 2em;
 }
+
+.da-linkdonate {
+	background-color: #EBEBEB;
+	display: block;
+	color: #1BBC9B;
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: 10%;
+	text-align: center;
+	padding: 1em 2em;
+}
+
 .da-slide .da-link:hover
 {
 	background:#01CAA1;
