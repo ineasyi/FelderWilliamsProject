@@ -77,6 +77,35 @@ body {
 	background: #1bbc9b;
 }
 /************end-nav***********/
+
+/******JJ START BUTTONS AND TEXTBOXES *******/
+.action-btn {
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center !important;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.mtop10 {
+	margin-top: 10px !important;
+}
+
+.mbottom10 {
+	margin-bottom: 10px !important;
+}
+
+/******JJ EEND BUTTONS AND TEXTBOXES *******/
+
 /* start slider */
 .slider_bg{
 	background:  url('../images/banner.jpg') no-repeat;
@@ -128,7 +157,7 @@ body {
 	font-size: 1em;
 	text-transform: uppercase;
 	margin: 0 auto;
-	width: 10%;
+	width: max-content;
 	text-align: center;
 	padding: 1em 2em;
 }
@@ -140,9 +169,11 @@ body {
 	font-size: 1em;
 	text-transform: uppercase;
 	margin: 0 auto;
-	width: 10%;
+	/* width: 10%; */
+	width: max-content;
 	text-align: center;
 	padding: 1em 2em;
+	border-radius: 4px;
 }
 
 .da-slide .da-link:hover
@@ -185,9 +216,12 @@ body {
 	display: block;
 }
 /*---start-gallery-----*/
-.gallery{
-	margin-top: 4% 0%;
+.gallery {
+    border-radius: 3px;
+    overflow: hidden;
+	position: relative;
 }
+
 .gallery1 {
 	padding: 4em 0em;
 }
@@ -371,60 +405,59 @@ body {
 .col:first-child{
 	margin-left:0;
 }	
-.span_2_of_3 {
-	width: 66.1%;
-}
 .span_1_of_3 {
-	width: 32.2%;
+	width: 73%;
+}
+.span_2_of_3 {
+	width: 25%;
 }
 .contact {
 	background: #EBEBEB;
 }
-.contact-form{
-	padding-bottom:30px;
+
+.contact-form {
+	margin-bottom: 10px;
 }
+
 .contact-form div{
 	padding:5px 0 15px;
 }
 .contact h2{
 	color:#444444;
 	font-size:2em;
-	padding: 2em 0em 0.7em 0em;
-	text-align: center;
+	text-align: left;
 }
 .contact h4{
 	color:#444;
 	font-size:1em;
-	text-align: center;
+	text-align: left;
 }
 .contact h5{
 	color:#444;
 	font-size:1em;
 	padding-bottom: 2em;
 }
-.contact-form input[type="text"],.contact-form textarea{
+.contact-form input[type="text"], .contact-form textarea{
 	padding: 15px;
+	margin-bottom: 20px;
 	display: block;
-	width: 43%;
+	width: 45%;
 	background:#fff;
 	outline: none;
 	color:#888282;
 	font-size: 0.8125em;
 	-webkit-appearance: none;
-	float:left;
-	margin-right: 2em;
+	/* float:left; */
+	/* margin-right: 2em; */
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
-	border: 2px solid #CACACA;
-}
-.contact-form input[type="text"]:nth-child(2)
-{
-	margin-right: 0em;
+	border: none;
+	border-radius: 5px;
 }
 .contact-form textarea{
 	padding: 15px;
 	display: block;
-	width: 94%;
+	width: 75%;
 	background:#fff;
 	border: none;
 	outline: none;
@@ -432,9 +465,8 @@ body {
 	font-size: 0.8125em;
 	-webkit-appearance: none;
 	font-style: italic;
-	border:2px solid #CACACA;
-	margin-bottom: 2em;
 }
+
 .contact-form textarea{
 	resize:none;
 	height:180px;		
@@ -456,9 +488,9 @@ body {
 	font-size: 1em;
 	outline: none;
 	text-transform: uppercase;
-	float: right;
-	margin-right: 2%;	
+	float: left;
 }
+
 .company_address p{
 	color:#525252;
 	font-size:0.8125em;
@@ -547,7 +579,7 @@ body {
 @media only screen and (max-width:1440px) and (min-width:1366px)
 {
 .wrap {
-	width:75%;
+	width:80%;
 }
 #filters {
 	margin: 2% auto;
@@ -570,7 +602,7 @@ body {
 @media only screen and (max-width:1366px) and (min-width:1280px)
 {
 .wrap {
-	width:80%;
+	width:85%;
 }
 #filters {
 	width: 65%;
@@ -596,7 +628,7 @@ body {
 @media only screen and (max-width:1280px) and (min-width:1024px)
 {
 	.wrap {
-	width:85%;
+	width:90%;
 }
 #filters {
 	width: 64%;
@@ -616,7 +648,7 @@ body {
 @media only screen and (max-width:1024px) and (min-width:768px)
 {
 .wrap {
-	width:90%;
+	width:95%;
 }
 #filters {
 	width:76%;
@@ -643,7 +675,8 @@ padding: 0.5em 0.7em;
 	font-size: 2.6em;
 }
 .da-slide .da-link {
-	width: 13%;
+	/* width: 13%; */
+	width: max-content;
 	padding: 0.8em 2em;
 }
 .da-slide {
@@ -670,7 +703,7 @@ padding: 0.5em 0.7em;
 @media only screen and (max-width:768px) and (min-width:640px)
 {
 .wrap{
-		width:90%;
+		width:95%;
 }
 #filters {
 	width:100%;
@@ -717,7 +750,8 @@ padding: 0.5em 0.7em;
 	font-size: 2.6em;
 }
 .da-slide .da-link {
-	width: 14%;
+	width: max-content;
+	/* width: 14%; */
 	padding: 0.6em 1.8em;
 }
 .da-slide {
@@ -725,7 +759,7 @@ padding: 0.5em 0.7em;
 }
 .grid {
 	width: 45%;
-	margin-right: 10%;
+	/* margin-right: 10%; */
 }
 .grid:nth-child(2) {
 	margin-right: 0%;
@@ -763,7 +797,7 @@ padding: 0.5em 0.7em;
 	margin-bottom: 0%;
 }
 .company_address {
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 }
 .contact h2 {
 	padding: 1.4em 0em 0.7em 0em;
@@ -773,7 +807,7 @@ padding: 0.5em 0.7em;
 @media only screen and (max-width:640px) and (min-width:480px)
 {
 .wrap{
-		width:90%;
+		width:95%;
 }
 #filters {
 	width:100%;
@@ -803,7 +837,8 @@ padding: 0.5em 0.7em;
 	font-size: 2.5em;
 }
 .da-slide .da-link {
-	width: 14%;
+	width: max-content;
+	/* width: 14%; */
 	padding: 0.6em 1.8em;
 	font-size: 0.9em;
 }
@@ -828,7 +863,7 @@ padding: 3em 0em;
 }
 .grid {
 	width: 45%;
-	margin-right: 10%;
+	/* margin-right: 10%; */
 }
 .grid:nth-child(2) {
 	margin-right: 0%;
@@ -855,7 +890,7 @@ padding: 3em 0em;
 	margin-bottom: 0%;
 }
 .company_address {
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 }
 .contact h2 {
 	padding: 1.4em 0em 0.7em 0em;
@@ -890,7 +925,7 @@ padding: 3em 0em;
 @media only screen and (max-width:480px) and (min-width:320px)
 {
 .wrap{
-		width:90%;
+		width:95%;
 }
 .logo {
 	float: none;
@@ -937,7 +972,8 @@ margin-bottom: 1.5em;
 	font-size: 2.1em;
 }
 .da-slide .da-link {
-	width: 20%;
+	width: max-content;
+	/* width: 20%; */
 	padding: 0.6em 1.8em;
 	font-size: 0.9em;
 }
@@ -994,7 +1030,7 @@ padding: 3em 1em;
 	margin-bottom: 0%;
 }
 .company_address {
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 }
 .contact h2 {
 	padding: 1.4em 0em 0.7em 0em;
@@ -1035,7 +1071,7 @@ font-size: 1.8em;
 @media only screen and (max-width:320px) and (min-width:240px)
 {
 .wrap{
-		width:90%;
+	width:95%;
 }
 .logo {
 	float: none;
@@ -1139,7 +1175,7 @@ padding: 1.2em 0em;
 	margin-bottom: 0%;
 }
 .company_address {
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 }
 .contact h2 {
 	padding: 1.4em 0em 0.7em 0em;
