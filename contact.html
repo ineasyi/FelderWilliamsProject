@@ -8,9 +8,48 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 
 <head>
-	<title>The Felder-Williams Project</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- NEW META TAGS -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<meta property="og:title" content="City Ave Social" />
+	<meta property="og:description" content="Promotion &amp; Web Design" />
+	<meta property="og:image" content="http://www.cityavesocial.com/cityavesocialfb.jpg" />
+	<meta property="og:url" content="http://cityavesocial.com" />
+	<meta name="twitter:card" content="">
+	<meta name="og:site_name" content="City Ave Social">
+	<meta name="twitter:image:alt" content="Promotion &amp; Web Design">
+
+	<title>DEMO Felder Williams (Finalize this when complete)</title>
+	<!-- FAVIVONS -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- END NEW TAGS -->
+	<!-- Original Tags -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/imgeffect.css" />
@@ -88,7 +127,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+				var hashThis = $(this.hash);
+				if (hashThis.length) {
+
+					$('html,body').animate({ scrollTop: hashThis.offset().top }, 1200);
+				}
 			});
 		});
 	</script>
@@ -102,7 +145,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!--------start-logo------>
 				<div class="logo">
 					<a href="index.html">
-						<img src="images/logo.png" alt="" />
+						<img src="tfx/logo/felderwilliams-left.png" width="275" height="75" ; alt="" />
 					</a>
 				</div>
 				<!--------end-logo--------->
@@ -113,16 +156,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="index.html" class="da-link">Home</a>
 						</li>
 						<li>
-							<a href="index.html#about" class="da-link">Events</a>
+							<a href="#about" class="da-link scroll">Events</a>
 						</li>
 						<li>
 							<a href="about.html" class="da-link">About</a>
-                        </li>
-                        <li class="active">
-							<a href="donate.html" class="da-link">Donate</a>
 						</li>
 						<li>
-							<a href="index.html#contact" class="da-link">Contact</a>
+							<a href="donate.html" class="da-link">Donate</a>
+						</li>
+						<li class="active">
+							<a href="contact.html" class="da-link">Contact</a>
 						</li>
 						<div class="clear"> </div>
 					</ul>
@@ -132,52 +175,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
-	<!------end-header----------->
-	<!-- start slider -->
-	<div class="slider_bgdonate">
-		<div class="wrap">
-			<!--- start-da-slider -->
-			<div class="da-slide">
-				<h2>
-					<span></span> Every Bit Counts!</h2>
-				
-				<a href="#portfolio" class="scroll" style="visibility:hidden;">
-					<span class="da-img"> </span>
-                </a>
-                <a href="#" class="da-link action-btn">Donate Now</a>
-			</div>
-			<!---//End-da-slider---->
-		</div>
-	</div>
-	<!-----end-slider-------->
-
-		<!-----start-about-------->
-
-		<div class="about" id="about">
-			<div class="wrap">
-				<h2>How to you can help our mission!</h2>
-				<p>Any size monetary donation is greatly appreciated. In a world where everyone is becoming a victim , everybody 
-                    is craving love.<br/> It is an emotion that the world severely lacks in nowadays. Charity is a good way to prove 
-                    that love still exists.<br/>It gives people hope that humanity is still present.
-                </p>
-				<a href="#" class="da-linkdonate donate-btn">Donate Now</a>
-			</div>
-		</div>
-		<!---------end-about------------>
-
-
+    <!------end-header------------>
+    <!-----start contect -------->
 	<div class="contact" id="contact">
 		<div class="wrap">
+			
 			<div class="section group">
-				<div class="subscribe-area">
+				<div class="col span_1_of_3">
 					<div class="contact-form">
-						<h2>Subscribe</h2>
+						<h2>Contact Us</h2>
 						<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
 						<div class="clear" style="height: 15px"></div>
-						<form method="post" action="#">
+						<form method="post" action="#">							
 							<input type="text" class="textbox" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your  Name';}">
 							<input type="text" class="textbox" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
-							<div class="clear"> </div>
+
+							<div>
+								<textarea value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message';}">Your Message...</textarea>
+							</div>
 							<span>
 								<input type="submit" class="action-btn" value="Submit">
 							</span>
@@ -185,7 +200,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</form>
 					</div>
 				</div>
+				<div class="col span_2_of_3">
+					<div class="company_address">
+						<h5>INFORMATION</h5>
+						<ul class="list3">
+							<li>
+								<img src="images/location.png" alt="" />
+								<div class="extra-wrap">
+									<p>Lorem ipsum consectetu</p>
+									<p>12345-Lorem ipsum consectetu</p>
+									<p>Lorem ipsum , consectetu</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
 
+							<li>
+								<img src="images/phone.png" alt="" />
+								<div class="extra-wrap">
+									<p>+1 800(Phone) 258 2598</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
+							<li>
+								<img src="images/fax2.png" alt="" />
+								<div class="extra-wrap">
+									<p>+1 500(Tax) 6343 8690</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
+							<li>
+								<img src="images/mail.png" alt="" />
+								<div class="extra-wrap">
+									<p>
+										<a href="mailto:info@mycompany.com"> info(at)appstore.com</a>
+									</p>
+								</div>
+								<div class="clear"> </div>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div class="clear"></div>
 			</div>
 		</div>

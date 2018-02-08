@@ -397,6 +397,51 @@ body {
 /**********end-about-style**********/
 
 /***********  Contact Form  *************/
+.subscribe-area {
+	width: 90%;
+	padding: 30px;
+	text-align: center;
+}
+
+.subscribe-area input[type="text"] {
+	padding: 15px;
+	margin-bottom: 20px;
+	display: block;
+	width: 45%;
+	background:#fff;
+	outline: none;
+	color:#888282;
+	font-size: 0.8125em;
+	-webkit-appearance: none;
+	/* float:left; */
+	/* margin-right: 2em; */
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+.subscribe-area .contact-form input[type="submit"] 
+{
+	font-family: 'Lato', sans-serif;
+	color:#fff;
+	padding: 0.8em 1.5em;
+	background: #1BBC9B;
+	border:1px solid #1BBC9B;
+	display: block;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+	font-size: 1em;
+	outline: none;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
 .col{
 	display: block;
 	float:left;
@@ -425,12 +470,11 @@ body {
 .contact h2{
 	color:#444444;
 	font-size:2em;
-	text-align: left;
 }
+
 .contact h4{
 	color:#444;
 	font-size:1em;
-	text-align: left;
 }
 .contact h5{
 	color:#444;
@@ -488,7 +532,6 @@ body {
 	font-size: 1em;
 	outline: none;
 	text-transform: uppercase;
-	float: left;
 }
 
 .company_address p{
