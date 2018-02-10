@@ -588,12 +588,15 @@ body {
 /* #Tablet (Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.container {
+		width: 95%; 
+		margin: 0 auto;
 	}
 }
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
 	.container { 
 		width: 95%; 
+		margin: 0 auto;
 	}
 	
 	#portfoliolist .portfolio {
