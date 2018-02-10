@@ -398,8 +398,7 @@ body {
 
 /***********  Contact Form  *************/
 .subscribe-area {
-	width: 90%;
-	padding: 30px;
+	padding-top: 30px;
 	text-align: center;
 }
 
@@ -461,7 +460,7 @@ body {
 }
 
 .contact-form {
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .contact-form div{
