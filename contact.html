@@ -186,18 +186,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h2>Contact Us</h2>
 						<h4>All inquiries are typically receive a reponse within 48 hours.  For immediate contact please reach out by phone/text.</h4>
 						<div class="clear" style="height: 15px"></div>
-						<form method="post" action="#">							
-							<input type="text" class="textbox" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your  Name';}">
-							<input type="text" class="textbox" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
+						<form method="post" action="http://52.168.165.159/api/values" name="contact">							
+							<input type="text" class="textbox" name="name" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your  Name';}">
+							<input type="text" class="textbox" name="email" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
 
 							<div>
-								<textarea value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message';}">Your Message...</textarea>
+								<textarea name="message" value="Your Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message';}">Your Message...</textarea>
 							</div>
 							<span>
+									<input type="text" name="siteId" id="siteId" value="FWP" style="display:none;">
+									<input type="text" name="siteKey" class="textbox" id="response" value="" style="display:none;">
 								<input type="submit" class="action-btn" value="Submit">
 							</span>
 							<div class="clear"></div>
 						</form>
+						<form action="http://52.168.165.159/api/values" name="tokenForm" method="post" id="tokenForm" style="display:none;">
+                            <input type="text" name="siteId" id="siteId" value="FWP">
+                        </form>
 					</div>
 				</div>
 				<div class="col span_2_of_3">
@@ -272,6 +277,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<script src="js/jquery.scrollTo.js"></script>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#tokenForm').submit(function () { // catch the form's submit event
+				$.ajax({ // create an AJAX call...
+					data: $(this).serialize(), // get the form data
+					type: $(this).attr('method'), // GET or POST
+					url: $(this).attr('action'), // the file to call
+					success: function (data) { // on success..
+						$('#response').val(data); // update the DIV
+					}
+				});
+				return false; // cancel original event to prevent form submitting
+			});
+			$('#tokenForm').submit();
+		});
+	</script>
 </body>
 
 </html>
