@@ -1043,15 +1043,20 @@ padding: 3em 1em;
 {
 	display: block;
 }
-#portfoliolist>div{
+/* #portfoliolist>div{
 	display:none;
-}
+} */
 .grid {
 	width: 100%;
 	margin-right: 0%;
 	float: none;
 	margin-bottom: 10%;
 }
+
+.gallery {
+	display: none;
+}
+
 .grid:nth-child(2) {
 	margin-right: 0%;
 }
