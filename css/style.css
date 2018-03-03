@@ -104,6 +104,11 @@ body {
 	margin-bottom: 10px !important;
 }
 
+.fleft50 {
+	float: left;
+	width: 50%;
+}
+
 /******JJ EEND BUTTONS AND TEXTBOXES *******/
 
 /* start slider */
@@ -139,6 +144,7 @@ body {
 	z-index: 10;
 	text-align: center;
 }
+
 .da-slide h2 span {
 	font-size: 1em;
 	font-weight: 300;
@@ -165,9 +171,9 @@ body {
 }
 
 .da-linkdonate {
-	background-color: #EBEBEB;
+	background-color: #1BBC9B;
 	display: block;
-	color: #1BBC9B;
+	color: #fff;
 	font-size: 1em;
 	text-transform: uppercase;
 	margin: 0 auto;
@@ -187,7 +193,7 @@ body {
 	height: 50px;
 	display: block;
 	margin: 2em auto 1em;
-	background: url(../images/buttonimg.png);
+	background: url(../images/buttonimgh.png);
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
@@ -200,6 +206,60 @@ body {
 	display: block;
 	background: url(../images/buttonimgh.png);
 }
+/* START JJ - da-slide2 */
+.da-slide2 {
+	padding: 5%;
+}
+
+.da-slide2 .purpose {
+	color: #000;
+	font-size: 2em;
+	font-weight: 300;
+	z-index: 10;
+	margin: 30px;
+	text-align: center;
+}
+
+.da-slide2 .purpose-title {
+	color: #1BBC9B;
+	font-size: 3em;
+	font-weight: 500;
+	z-index: 10;
+	text-align: center;
+}
+
+.da-slide2 h2 span {
+	font-size: 1em;
+	font-weight: 300;
+}
+.da-slide2 p {
+	color: #FFF;
+	font-size: 1.4em;
+	text-align: center;
+	margin: 1em auto;
+	width: 77%;
+	font-weight: 300;
+	line-height: 1.4em;
+}
+.da-slide2 .da-link {
+	background-color: #1BBC9B;
+	display: block;
+	color: #FFF;
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: max-content;
+	text-align: center;
+	padding: 1em 2em;
+}
+
+.da-slide2 .da-link2:hover
+{
+	background:#01CAA1;
+}
+
+/* END JJ - da-slide2 */
+
 /* start main_btm */
 .container h2{
 	color:#4D4D4D;
@@ -322,23 +382,62 @@ body {
 .sharedrible{
 	background: url(../images/social-icons.png) no-repeat 0px 0px;
 }
-.about
+.event
 {
 	background: #1BBC9B;
-	text-align:center;
+	text-align: center;
 	padding: 5em 0em;
 }
-.about h2{
+.event h2{
 	color:#fff;
 	font-size:2em;
 	padding-bottom: 0.5em;
 }
-.about p{
+.event p{
 	color:#fff;
-	font-size:1em;
-	padding-bottom: 4em;
+	font-size:1.25em;
+	padding-bottom: 2em;
 }
-.about-grids
+
+.about
+{
+	/* background: #1BBC9B; */
+	text-align: left;
+	padding: 5em 0em;
+}
+.about h2{
+	/* color:#fff; */
+	color:#1BBC9B;
+	font-size:2em;
+	padding-bottom: 0.5em;
+}
+.about p{
+	/* color:#fff; */
+	color:#000;
+	font-size:1.25em;
+	padding-bottom: 2em;
+}
+
+.donate
+{
+	/* background: #1BBC9B; */
+	text-align: center;
+	padding: 5em 0em;
+}
+.donate h2{
+	/* color:#fff; */
+	color:#1BBC9B;
+	font-size:2em;
+	padding-bottom: 0.5em;
+}
+.donate p{
+	/* color:#fff; */
+	color:#000;
+	font-size:1.25em;
+	padding-bottom: 2em;
+}
+
+.event-grids
 {
 	width:100%;
 	margin: 0 auto;
@@ -836,9 +935,7 @@ padding: 0.5em 0.7em;
 .company_address {
 	padding: 5% 0%;
 }
-.contact-form form input[type="submit"] {
-	float: left;
-}
+
 .company_address p {
 	font-size: 1em;
 	margin-bottom: 0%;
@@ -893,9 +990,24 @@ padding: 0.5em 0.7em;
 	width: 68%;
 	margin-left: 0%;
 }
-.da-slide {
-	padding: 4%  0%;
+
+.da-slide2 .purpose {
+	color: #000;
+	font-size: 1em;
+	font-weight: 300;
+	z-index: 10;
+	margin: 20px;
+	text-align: center;
 }
+
+.da-slide2 .purpose-title {
+	color: #1BBC9B;
+	font-size: 1.5em;
+	font-weight: 500;
+	z-index: 10;
+	text-align: center;
+}
+
 .about {
 padding: 3em 0em;
 }
@@ -961,7 +1073,6 @@ padding: 3em 0em;
 }
 .contact-form form input[type="submit"] {
 	margin-right: 2%;
-	float: left;
 }
 .contact-form {
 	padding-bottom: 0px;
@@ -1030,6 +1141,24 @@ margin-bottom: 1.5em;
 .da-slide {
 	padding: 4%  0%;
 }
+
+.da-slide2 .purpose {
+	color: #000;
+	font-size: 1.25em;
+	font-weight: 300;
+	z-index: 10;
+	margin: 20px;
+	text-align: center;
+}
+
+.da-slide2 .purpose-title {
+	color: #1BBC9B;
+	font-size: 1.5em;
+	font-weight: 500;
+	z-index: 10;
+	text-align: center;
+}
+
 .about {
 padding: 3em 1em;
 }
@@ -1037,7 +1166,7 @@ padding: 3em 1em;
 	padding-bottom: 2em;
 }
 .gallery1 {
-	padding: 2em 0em;
+	padding: 0em 0em;
 }
 #portfoliolist>.hide
 {
@@ -1106,7 +1235,6 @@ padding: 3em 1em;
 }
 .contact-form form input[type="submit"] {
 	margin-right: 2%;
-	float: left;
 }
 .contact-form {
 	padding-bottom: 0px;
@@ -1187,7 +1315,7 @@ padding: 1.2em 0em;
 	padding-bottom: 2em;
 }
 .gallery1 {
-	padding: 2em 0em;
+	padding: 0em 0em;
 }
 #portfoliolist>div{
 	display:none;
@@ -1251,7 +1379,6 @@ padding: 1.2em 0em;
 }
 .contact-form form input[type="submit"] {
 	margin-right: 2%;
-	float: left;
 }
 .contact-form {
 	padding-bottom: 0px;
