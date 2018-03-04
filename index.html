@@ -231,23 +231,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								a night out with great entertainment!
 							</div>
 							<div class="event-info-section">
-									Date: Saturday, May 26<sup>th</sup><br>  			
-								</div>	
-								<div class="event-info-section">
-									Time: 7PM - 11PM<br>  			
-								</div>		
+								<span class="event-label">Date: </span>Saturday, May 26<sup>th</sup><br>  			
+							</div>	
 							<div class="event-info-section">
-								Location:<br> 
+								<span class="event-label">Time: </span> 7PM - 11PM<br>  			
+							</div>		
+							<div class="event-info-section">
+								<span class="event-label">Location:</span><br> 
 								H&H Banquet Hall<br>  
 								2036 Haines St.<br> 
 								Phila, PA 19138<br> 
 							</div>
-							<div class="event-info-section"> 
-								Get Tickets!<br>
+							<div class="event-info-section-tickets"> 
+								<span class="event-label">GET TICKETS NOW!</span><br> 
+								<!--
 								<a href="https://www.paypal.me/TFWProject/35" class="da-link action-btn">Premium Seating ($35)</a><br>
 								<a href="https://www.paypal.me/TFWProject/40" class="da-link action-btn">VIP Seating ($40)</a><br>
 								<a href="https://www.paypal.me/TFWProject/300" class="action-btn">Tables ($300)</a><br>
-								<!-- <form action="" method="POST">
+								-->
+								<form action="" method="POST">
 									<script
 									  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 									  data-key="pk_test_RJbpotbvoUXOQybUmmB8qfsZ"
@@ -258,8 +260,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
 									  data-locale="auto">
 									</script>
-								  </form>
-								  <form action="" method="POST">
+									<button type="submit" class="custom-stripe-btn">Buy Premium Seating - $35</button>									
+								</form>
+								<form action="" method="POST">
 									<script
 									  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 									  data-key="pk_test_RJbpotbvoUXOQybUmmB8qfsZ"
@@ -269,9 +272,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									  data-zip-code="true"
 									  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
 									  data-locale="auto">
-									</script>
-								  </form>
-								  <form action="" method="POST">
+									</script>	
+									<button type="submit" class="custom-stripe-btn">Buy VIP Seating - $40</button>								
+								</form>
+								<form action="" method="POST">
 									<script
 									  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 									  data-key="pk_test_RJbpotbvoUXOQybUmmB8qfsZ"
@@ -282,8 +286,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
 									  data-locale="auto">
 									</script>
-								  </form> -->
-							</div>				
+									<button type="submit" class="custom-stripe-btn">Buy Table Seating - $300</button>								
+								</form>
+								<script>
+									// Hide eachs stripe button, replaces with submit
+									document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+									document.getElementsByClassName("stripe-button-el")[1].style.display = 'none';
+									document.getElementsByClassName("stripe-button-el")[2].style.display = 'none';
+								</script>
+							</div>			
 						</div>
 					</div>
 				</div>

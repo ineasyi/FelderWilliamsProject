@@ -122,6 +122,42 @@ body {
 	max-width: 100%;
 }
 
+.custom-stripe-btn {
+	min-width: 60%;
+	width: calc((25em - 100%) * 1000);
+	max-width: 100%;
+	background-color: whitesmoke;
+	display: block;
+	color: #1BBC9B;
+	font-size: .75em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px 0;
+	text-align: center;
+	padding: .75em 1.5em;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.custom-stripe-btn:hover {
+	min-width: 60%;
+	width: calc((25em - 100%) * 1000);
+	max-width: 100%;
+	background-color: rgb(59, 30, 223);
+	display: block;
+	color: #fff;
+	font-size: .75em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px 0;
+	text-align: center;
+	padding: .75em 1.5em;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
 /******JJ EEND BUTTONS AND TEXTBOXES *******/
 
 /* start slider */
@@ -523,7 +559,15 @@ body {
 }
 
 .event-info-section {
-	margin: 20px 0;
+	margin: 14px 0;
+}
+
+.event-info-section-tickets {
+	margin: 14px 0;
+}
+
+.event-label {
+	font-weight: bold;
 }
 
 /**********end-event-style**********/
