@@ -247,70 +247,70 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 								
 								<!-- <a href="https://www.paypal.me/TFWProject/35" class="da-link action-btn">Premium Seating ($35)</a><br>
 								<a href="https://www.paypal.me/TFWProject/40" class="da-link action-btn">VIP Seating ($40)</a><br>
-								<a href="https://www.paypal.me/TFWProject/300" class="action-btn">Tables ($300 max 8)</a><br> -->
+								<a href="https://www.paypal.me/TFWProject/300" class="action-btn">Tables ($300 max 8)</a><br>  -->
 								
-								 <form action="http://localhost:52124/api/stripe?Description=PRM" method="POST" name="PRM" id="PRM">
-										<!-- <select name="quantity" id="ticket_PRM">
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select> -->
-											<input type="hidden" name="amount" id="amount" value="3500" />
-											<input type="hidden" name="description" id="description" value="PRM" />
-								 <script
-								 src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-								 data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
-								 data-amount="3500" 
-									   data-name="The Felder-Williams Project" 
-									   data-description="Charity Event - Premium Seating" 
-									  data-zip-code="true" 
-									  data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-									   data-locale="auto"> 
-									</script> 
-									<button type="submit" class="custom-stripe-btn">Buy Premium Seating - <span id="spanPRM">$35</span></button>									 
+								 <form action="https://casinternal.com/api/stripe" method="POST" name="PRM" id="PRM">
+													<!-- <select name="quantity" id="ticket_PRM">
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+														</select>  -->
+														<input type="hidden" name="amount" id="amount" value="3500" />
+														<input type="hidden" name="description" id="description" value="PRM" />
+											<script
+											src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+											data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
+											data-amount="3500" 
+												data-name="The Felder-Williams Project" 
+												data-description="Charity Event - Premium Seating" 
+												data-zip-code="true" 
+												data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+												data-locale="auto"> 
+												</script> 
+												<button type="submit" class="custom-stripe-btn">Buy Premium Seating - <span id="spanPRM">$35</span></button>									 
 								</form> 
-								<form action="http://localhost:52124/api/stripe?Description=VIP" method="POST" name="VIP" id="VIP"> 
-										<!-- <select name="quantity" id="ticket_VIP">
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select> -->
-											<input type="hidden" name="amount" id="amount" value="4000"/>
-											<input type="hidden" name="description" id="description" value="VIP" />
-									<script
-									  src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-									  data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
-									  data-amount="4000" 
-									  data-name="The Felder-Williams Project" 
-									  data-description="Charity Event - VIP Seating" 
-									  data-zip-code="true" 
-									  data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-									  data-locale="auto"> 
-									</script>	 
-									<button type="submit" class="custom-stripe-btn">Buy VIP Seating - <span id="spanVIP">$40</span></button>								 
+								<form action="https://casinternal.com/api/stripe" method="POST" name="VIP" id="VIP"> 
+													<!-- <select name="quantity" id="ticket_VIP">
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+														</select>  -->
+														<input type="hidden" name="amount" id="amount" value="4000"/>
+														<input type="hidden" name="description" id="description" value="VIP" />
+												<script
+												src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+												data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
+												data-amount="4000" 
+												data-name="The Felder-Williams Project" 
+												data-description="Charity Event - VIP Seating" 
+												data-zip-code="true" 
+												data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+												data-locale="auto"> 
+												</script>	 
+												<button type="submit" class="custom-stripe-btn">Buy VIP Seating - <span id="spanVIP">$40</span></button>								 
 								</form> 
-								<form action="http://localhost:52124/api/stripe?Description=TBL" method="POST" name="TBL" id="TBL">
-										<!-- <select name="quantity" id="ticket_TBL">
-												<option value="1" selected>1</option>
-											</select> -->
-											<input type="hidden" name="amount" id="amount" value="30000" />
-											<input type="hidden" name="description" id="description" value="TBL" />
-									<script 
-									  src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-									  data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
-									  data-amount="30000" 
-									  data-name="The Felder-Williams Project" 
-									  data-description="Charity Event - Table Seating" 
-									   data-zip-code="true" 
-									  data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-									  data-locale="auto"> 
-									 </script> 
-									<button type="submit" class="custom-stripe-btn">Buy Table Seating - <span id="spanTBL">$300</span></button>								 
+								<form action="https://casinternal.com/api/stripe" method="POST" name="TBL" id="TBL">
+												<!-- <select name="quantity" id="ticket_TBL">
+														<option value="1" selected>1</option>
+													</select>  -->
+													<input type="hidden" name="amount" id="amount" value="30000" />
+													<input type="hidden" name="description" id="description" value="TBL" />
+											<script 
+											src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+											data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
+											data-amount="30000" 
+											data-name="The Felder-Williams Project" 
+											data-description="Charity Event - Table Seating" 
+											data-zip-code="true" 
+											data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+											data-locale="auto"> 
+											</script> 
+											<button type="submit" class="custom-stripe-btn">Buy Table Seating - <span id="spanTBL">$300</span></button>								 
 								</form>
 								 <script> 
-									// Hide eachs stripe button, replaces with submit -->
+									// Hide eachs stripe button, replaces with submit 
 									document.getElementsByClassName("stripe-button-el")[0].style.display = 'none'; 
 									document.getElementsByClassName("stripe-button-el")[1].style.display = 'none'; 
 									document.getElementsByClassName("stripe-button-el")[2].style.display = 'none'; 
@@ -318,8 +318,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 									// $("#ticket_PRM").on("change", function(){
 									// 	var qt = $("#ticket_PRM").val();
 									// 	var total = (qt * 3500);
-									// 	console.log(total);
-									// 	$("#PRM > script").attr("data-amount", total);
+										
 									// 	$("#PRM > input#amount").attr("value", total);
 									// 	$("#spanPRM").html("$"+(total/100) + ".00");
 									// });
@@ -327,8 +326,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 									// $("#ticket_VIP").on("change", function(){
 									// 	var qt = $("#ticket_VIP").val();
 									// 	var total = (qt * 4000);
-									// 	console.log(total);
-									// 	$("#VIP > script").attr("data-amount", total);
+										
 									// 	$("#VIP > input#amount").attr("value", total);
 									// 	$("#spanVIP").html("$"+(total/100) + ".00");
 									// });
@@ -336,12 +334,11 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 									// $("#ticket_TBL").on("change", function(){
 									// 	var qt = $("#ticket_TBL").val();
 									// 	var total = (qt * 30000);
-									// 	console.log(total);
-									// 	$("#TBL > script").attr("data-amount", total);
+										
 									// 	$("#TBL > input#amount").attr("value", total);
 									// 	$("#spanTBL").html("$"+(total/100) + ".00");
 									// });
-								</script> 
+								</script>
 							</div>			
 						</div>
 					</div>
