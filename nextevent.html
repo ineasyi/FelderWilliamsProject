@@ -1,0 +1,316 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: https://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: https://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<!-- NEW META TAGS -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<meta property="og:title" content="City Ave Social" />
+	<meta property="og:description" content="Promotion &amp; Web Design" />
+	<meta property="og:image" content="https://www.cityavesocial.com/cityavesocialfb.jpg" />
+	<meta property="og:url" content="https://cityavesocial.com" />
+	<meta name="twitter:card" content="">
+	<meta name="og:site_name" content="City Ave Social">
+	<meta name="twitter:image:alt" content="Promotion &amp; Web Design">
+
+	<title>The Felder-Williams Project</title>
+	<!-- FAVIVONS -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- END NEW TAGS -->
+	<!-- Original Tags -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/imgeffect.css" />
+	<script src="js/jquery.min.js"></script>
+	<!-- start gallery Script -->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var filterList = {
+
+				init: function () {
+
+					// MixItUp plugin
+					// https://mixitup.io
+					$('#portfoliolist').mixitup({
+						targetSelector: '.portfolio',
+						filterSelector: '.filter',
+						effects: ['fade'],
+						easing: 'snap',
+						// call the hover effect
+						onMixEnd: filterList.hoverEffect()
+					});
+
+				},
+
+				hoverEffect: function () {
+
+					// Simple parallax effect
+					$('#portfoliolist .portfolio').hover(
+						function () {
+							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({ top: 0 }, 500, 'easeOutQuad');
+						},
+						function () {
+							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
+						}
+					);
+
+				}
+
+			};
+
+			// Run the show!
+			filterList.init();
+
+
+		});	
+	</script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!----end gallery---------->
+
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				var hashThis = $(this.hash);
+				if (hashThis.length) {
+
+					$('html,body').animate({ scrollTop: hashThis.offset().top }, 1200);
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!----start-header---------->
+	<div class="header_bg">
+		<div class="wrap">
+			<div class="header">
+				<!--------start-logo------>
+				<div class="logo">
+					<a href="https://www.thefelder-williamsproject.com">
+						<img src="tfx/logo/felderwilliams-left.png" width="275" height="75" ; alt="" />
+					</a>
+				</div>
+				<!--------end-logo--------->
+				<!----start-nav-------->
+				<div class="nav">
+					<ul>
+						<li class="active">
+							<a href="https://www.thefelder-williamsproject.com" class="da-link">Home</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#Events" class="da-link" style="color:gray">Events</a>
+								<div class="dropdown-content">
+									<a href="#Events">Next Event</a>
+									<a href="nextevent.html">Special Event</a>
+									<a href="pasteventgallery.html">Past Events</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="https://www.thefelder-williamsproject.com/about.html" class="da-link">About</a>
+						</li>
+						<li>
+							<a href="https://www.thefelder-williamsproject.com/donate.html" class="da-link">Donate</a>
+						</li>
+						<li>
+							<a href="https://www.thefelder-williamsproject.com/contact.html" class="da-link">Contact</a>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<!-----end-nav-------->
+				<div class="clear"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!-----start-event-------->
+
+	<div class="event" id="Events">
+		<div class="wrap">
+			<h2>Help the Philadelphia Children's Alliance</h2>
+			<div class="container">
+				<div class="sbs-or-row" style="margin: 30px 0;">
+					<img class="post-person" src="tfx/v3flyer.jpg">
+				</div>
+				<div class="sbs-or-row" style="margin: 30px 0;">
+					<div class="desc2">
+						<div class="event-details">
+							<div class="event-info-title">
+                                    <div>The Felder-Williams Project</div>
+								<div>Pack & Bounce Party</div>
+								
+							</div>
+							<div class="event-info-section">
+                                The Felder-Williams Project will be hosting this event. Kids are welcomed to play as we prepare
+                                care packages for trafficking survivors.
+                                <br /><br />
+                                If you would like to volunteer, please fill out the contact form below! We will also be accepting
+                                donation in the form of clothes & unboxed toys.  We appreciate all your help and hope to see you
+                                there!
+							</div>
+							<div class="event-info-section">
+								<span class="event-label">Date: </span>Saturday, May 12
+								<sup>th</sup>
+								<br>
+							</div>
+							<div class="event-info-section">
+								<span class="event-label">Time: </span> 5PM - 7PM
+								<br>
+							</div>
+							<div class="event-info-section">
+								<span class="event-label">Location:</span>
+								<br> 
+								<br> 550 Foundry Rd.
+								<br> East Norriton, PA 19403
+								<br>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"> </div>
+	</div>
+
+
+	<!---------end-event------------>
+
+	<div class="contact" id="contact">
+		<div class="wrap">
+			<div class="section group">
+				<div class="subscribe-area">
+					<div class="contact-form">
+						<h2>Subscribe</h2>
+						<h4>Subscribe to stay informed on all the ways you can contribute.</h4>
+						<div class="clear" style="height: 15px"></div>
+						<form method="post" action="https://casinternal.com/api/values" name="subscribe">
+
+							<input type="text" class="textbox" value="Your Name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your  Name';}">
+							<input type="text" class="textbox" value="Your Email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
+							<input type="text" name="siteKey" class="textbox" id="response" value="" style="display:none;" />
+							<input type="text" name="siteId" id="siteId" value="FWP" style="display:none;" />
+							<div class="clear"> </div>
+							<span>
+								<input type="submit" class="action-btn" value="Submit">
+							</span>
+							<div class="clear"></div>
+						</form>
+						<form action="https://casinternal.com/api/values" name="tokenForm" method="post" id="tokenForm" style="display:none;">
+							<input type="text" name="siteId" id="siteId" value="FWP" />
+						</form>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="wrap">
+			<div class="copy">
+				<p class="copy">&#169 2018 Website by
+					<a href="https://cityavesocial.com" target="_blank">CityAveSocial</a>
+				</p>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function () {
+
+					var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+					};
+
+
+					$().UItoTop({ easingType: 'easeOutQuart' });
+
+				});
+			</script>
+			<a href="#" id="toTop" style="display: block;">
+				<span id="toTopHover" style="opacity: 1;"> </span>
+			</a>
+			<script src="js/jquery.scrollTo.js"></script>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#tokenForm').submit(function () { // catch the form's submit event
+				$.ajax({ // create an AJAX call...
+					data: $(this).serialize(), // get the form data
+					type: $(this).attr('method'), // GET or POST
+					url: $(this).attr('action'), // the file to call
+					success: function (data) { // on success..
+						$('#response').val(data); // update the DIV
+					}
+				});
+				return false; // cancel original event to prevent form submitting
+			});
+			$('#tokenForm').submit();
+		});
+	</script>
+</body>
+
+</html>
