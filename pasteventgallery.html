@@ -52,64 +52,12 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 	<!-- Original Tags -->
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<<<<<<< HEAD
-=======
 	<link href="css/gallerystyles/style.css" rel="stylesheet" type="text/css" media="all" />
->>>>>>> d6dcb67ba624215aaa018977172bddba2b07de6b
 	<link rel="stylesheet" type="text/css" href="css/imgeffect.css" />
 	<script src="js/jquery.min.js"></script>
 	<!-- start gallery Script -->
 	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<<<<<<< HEAD
-	<script type="text/javascript">
-		$(function () {
-
-			var filterList = {
-
-				init: function () {
-
-					// MixItUp plugin
-					// https://mixitup.io
-					$('#portfoliolist').mixitup({
-						targetSelector: '.portfolio',
-						filterSelector: '.filter',
-						effects: ['fade'],
-						easing: 'snap',
-						// call the hover effect
-						onMixEnd: filterList.hoverEffect()
-					});
-
-				},
-
-				hoverEffect: function () {
-
-					// Simple parallax effect
-					$('#portfoliolist .portfolio').hover(
-						function () {
-							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
-							$(this).find('img').stop().animate({ top: 0 }, 500, 'easeOutQuad');
-						},
-						function () {
-							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeInQuad');
-							$(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
-						}
-					);
-
-				}
-
-			};
-
-			// Run the show!
-			filterList.init();
-
-
-		});	
-	</script>
-	<!-- Add fancyBox main JS and CSS files -->
-	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
-=======
 
 	<!-- Add fancyBox main JS and CSS files -->
 	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
@@ -117,7 +65,6 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 
 	<script src="js/galleryjs/all.js" type="text/html"></script>
 	<script src="js/galleryjs/script.js" type="text/html"></script>
->>>>>>> d6dcb67ba624215aaa018977172bddba2b07de6b
 	<script>
 		$(document).ready(function () {
 			$('.popup-with-zoom-anim').magnificPopup({
@@ -149,6 +96,54 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
+	<style>
+			div.gallery {
+				border: 1px solid #ccc;
+			}
+			
+			div.gallery:hover {
+				border: 1px solid #777;
+			}
+			
+			div.gallery img {
+				width: 100%;
+				height: auto;
+			}
+			
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+			
+			.responsive {
+				padding: 0 6px;
+				float: left;
+				width: 24.99999%;
+			}
+			
+			@media only screen and (max-width: 700px) {
+				.responsive {
+					width: 49.99999%;
+					margin: 6px 0;
+				}
+			}
+			
+			@media only screen and (max-width: 500px) {
+				.responsive {
+					width: 100%;
+				}
+			}
+			
+			.clearfix:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			</style>
 </head>
 
 <body>
@@ -173,15 +168,9 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 							<div class="dropdown">
 								<a href="#Events" class="da-link" style="color:gray">Events</a>
 								<div class="dropdown-content">
-<<<<<<< HEAD
-                                        <a href="index.html#Events">2nd Annual Charity Event</a>
-										<a href="nextevent.html">Pack & Bounce Party</a>
-										<a href="pasteventgallery.html">Past Events</a>
-=======
 									<a href="index.html#Events">2nd Annual Charity Event</a>
 									<a href="packbounce.html">Pack & Bounce Party</a>
 									<a href="pasteventgallery.html">Past Events</a>
->>>>>>> d6dcb67ba624215aaa018977172bddba2b07de6b
 								</div>
 							</div>
 						</li>
@@ -202,781 +191,166 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
-<<<<<<< HEAD
-	<!------- Start SideBar-------->
-	<div class="container-fluid">
-		<div class="row">
-		  <div class="col-sm-3 col-lg-2">
-			<nav class="navbar navbar-default navbar-fixed-side">
-			  <!-- normal collapsible navbar markup -->
-			</nav>
-		  </div>
-		  <div class="col-sm-9 col-lg-10">
-			<!-- your page content -->
-		  </div>
-		</div>
-	  </div>
-
-
-	<!------- End SideBar-------->
-
-
-
-<!--start EventGallery------>
-<div class="wrap" id="EventGallery">
-		<div class="main">
-			<!-- start gallery  -->
-			<div class="gallery1">
-				<!--start-mfp -->
-				<div id="small-dialog1" class="mfp-hide">
-					<div class="pop_up">
-						<h2>Events</h2>
-						<img src="images/backdropstaff.jpg" alt="" />
-						<p class="para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-							eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-							voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-							sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-					</div>
-				</div>
-				<!--end-mfp -->
-				<!---start-content-->
-				<div class="gallery">
-					<div class="clear"> </div>
-					<div class="container">
-						<h2>Photos</h2>
-						<p>Check out some of our recent photos from past events..</p>
-						<ul id="filters" class="clearfix">
-							<!-- <li>
-								<span class="filter active" data-filter="app card icon logo web">All</span>
-							</li>
-							 <li>
-								<span class="filter" data-filter="app web">Web Design</span>
-							</li>
-							<li>
-								<span class="filter" data-filter="icon web card">Graphic Design</span>
-							</li>
-							<li>
-								<span class="filter" data-filter="web app icon card">Flat Design</span>
-							</li> -->
-						</ul>
-						<div id="portfoliolist">
-							<div class="gallery">
-								<div class="img-w">
-									<img src="images/singlestaff.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="images/sonnyandkids.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="tfx/0A0A4748.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="tfx/0A0A5001.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="images/feldermic.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="tfx/0A0A4754.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="tfx/0A0A4686.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="images/backdropstaff.jpg" alt="" />
-								</div>
-								<div class="img-w">
-									<img src="images/check.jpg" alt="" />
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- container -->
-					<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-					<script type="text/javascript">$('body').flipLightBox()</script>
-					<script type="text/javascript">
-						$(function () {
-							$(".img-w").each(function () {
-								$(this).wrap("<div class='img-c'></div>")
-								let imgSrc = $(this).find("img").attr("src");
-								$(this).css('background-image', 'url(' + imgSrc + ')');
-							})
-
-
-							$(".img-c").click(function () {
-								let w = $(this).outerWidth()
-								let h = $(this).outerHeight()
-								let x = $(this).offset().left
-								let y = $(this).offset().top
-
-
-								$(".active").not($(this)).remove()
-								let copy = $(this).clone();
-								copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
-								$(".active").css('top', y - 8);
-								$(".active").css('left', x - 8);
-
-								setTimeout(function () {
-									copy.addClass("positioned")
-								}, 0)
-
-							})
-						})
-
-						$(document).on("click", ".img-c.active", function () {
-							let copy = $(this)
-							copy.removeClass("positioned active").addClass("postactive")
-							setTimeout(function () {
-								copy.remove();
-							}, 500)
-						})
-					</script>
-					<div class="clear"> </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!---End-gallery -->
-=======
 
 	<section class="page-section" id="portfolio">
-		<div class="container relative">
-
-			<!-- Works Filter -->
-			<div class="works-filter font-alt align-center">
-				<a href="#" class="filter active" data-filter="*">All works</a>
-				<a href="#comedy" class="filter" data-filter=".comedy">Comedy</a>
-				<a href="#dance" class="filter" data-filter=".dance">Dance</a>
-				<a href="#music" class="filter" data-filter=".music">Music</a>
+			<center><h2 style="color: black;">Fish Fry Fundraiser</h2>
+			<h4 style="color: black;"></h4></center>
+			
+			<!-- Start of 1st Row -->
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="images/gallery/fishfry/0A0A6174.jpg">
+				  <img src="images/gallery/fishfry/0A0A6174.jpg" alt="Trolltunga Norway" width="300" height="200">
+				</a>
+				<div class="desc">Add a description of the image here</div>
+			  </div>
 			</div>
-			<!-- End Works Filter -->
-
-			<!-- Works Grid -->
-			<ul class="works-grid work-grid-5 clearfix font-alt hover-white hide-titles" id="work-grid" style="position: relative; height: 439.827px;">
-
-				<!-- Work Item (Lightbox) -->
-				<li class="work-item mix music" style="position: absolute; left: 912px; top: 293px;">
-					<a href="#lilmo-popup" class="lilmo-popup-link">
-						<div class="work-img">
-							<img src="images/gallery/backpack/0A0A4679.jpg" alt="Lil Mo">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Lil Mo'</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6176.jpg">
+					<img src="images/gallery/fishfry/0A0A6176.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (Lightbox) -->
-				<li class="work-item mix music" style="position: absolute; left: 0px; top: 0px;">
-					<a href="#first-popup" class="first-popup-link">
-						<div class="work-img">
-							<img src="images/gallery/backpack/0A0A4681.jpg" alt="Keon Wolfe">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Keon Wolfe</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 228px; top: 0px;">
-					<a href="#second-popup" class="second-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/gallery/backpack/0A0A4750.jpg" alt="Zeek Burse">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Zeek Burse</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 456px; top: 0px;">
-					<a href="#third-popup" class="third-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/gallery/backpack/0A0A4773.jpg" alt="Janee Latrice">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Janee Latrice</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 684px; top: 0px;">
-					<a href="#fourth-popup" class="fourth-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/gallery/backpack/0A0A4787.jpg" alt="Sap Sounds">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Sap Sounds</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 912px; top: 0px;">
-					<a href="#fifth-popup" class="fifth-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/gallery/backpack/0A0A4835.jpg" alt="William Sankofa" style="filter:grayscale(100%);">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">David Lyve</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- End Work Item -->
-				<li class="work-item mix music" style="position: absolute; left: 684px; top: 293px;">
-					<a href="#jeremy-popup" class="jeremy-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/gallery/backpack/0A0A4837.jpg" alt="Jeremy Isaac" style="filter:grayscale(100%);">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Jeremy Isaac</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
-					</a>
-				</li>
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix comedy" style="position: absolute; left: 0px; top: 146px;">
-						<a href="#sixth-popup" class="sixth-popup-link">
-							<div class="work-img">
-								<img class="work-img" src="images/gallery/backpack/0A0A4842.jpg" alt="Will Wright">
-							</div>
-							<div class="work-intro">
-								<h3 class="work-title">Will Wright</h3>
-								<div class="work-descr">
-								 
-								</div>
-							</div>
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
+			
+			<div class="responsive">
+					<div class="gallery">
+						<a target="_blank" href="images/gallery/fishfry/0A0A6182.jpg">
+						<img src="images/gallery/fishfry/0A0A6182.jpg" alt="Trolltunga Norway" width="300" height="200">
 						</a>
-					</li>
-				<!-- End Work Item -->
+						<div class="desc">Add a description of the image here</div>
+					</div>
+				</div>
 
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix comedy" style="position: absolute; left: 228px; top: 146px;">
-					<a href="#seventh-popup" class="seventh-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/image6.jpg" alt="Topp Fliight">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Topp Fliight</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6189.jpg">
+					<img src="images/gallery/fishfry/0A0A6189.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
 
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix comedy" style="position: absolute; left: 456px; top: 146px;">
-					<a href="#eigth-popup" class="eigth-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/image8.jpg" alt="Chris Cotton" style="filter:grayscale(100%);">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Chris Cotton</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			<!-- Start of 2nd Row -->
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6222.jpg">
+					<img src="images/gallery/fishfry/0A0A6222.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
 
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 684px; top: 146px;">
-					<a href="#ninth-popup" class="ninth-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/anthonyhall.jpg" alt="Anthony Hall">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Anthony Hall</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6262.jpg">
+					<img src="images/gallery/fishfry/0A0A6262.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
 
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 912px; top: 146px;">
-					<a href="#tenth-popup" class="tenth-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/djb.jpg" alt="DJB">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">DJB</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6346.jpg">
+					<img src="images/gallery/fishfry/0A0A6346.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
 
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix dance" style="position: absolute; left: 0px; top: 293px;">
-					<a href="#eleventh-popup" class="eleventh-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/quadstroll17.jpg" alt="Quad Stroll 17" style="filter:grayscale(100%);">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Quad Stroll 17</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6296.jpg">
+					<img src="images/gallery/fishfry/0A0A6296.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
 
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 228px; top: 293px;">
-					<a href="#twelve-popup" class="twelve-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/sankofa.jpg" alt="William Sankofa" style="filter:grayscale(100%);">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">William Sankofa</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+			<!-- Start of 3rd Row -->
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6314.jpg">
+					<img src="images/gallery/fishfry/0A0A6314.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 456px; top: 293px;">
-					<a href="#jakeya-popup" class="twelve-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/Jakeya.jpg" alt="Work">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Jakeya</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
+						  
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6370.jpg">
+					<img src="images/gallery/fishfry/0A0A6370.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-				<li class="work-item mix music" style="position: absolute; left: 684px; top: 293px;">
-					<a href="#vivid-popup" class="vivid-popup-link">
-						<div class="work-img">
-							<img class="work-img" src="images/portfolio/vivid.jpg" alt="Vivid" style="filter:grayscale(100%);">
-						</div>
-						<div class="work-intro">
-							<h3 class="work-title">Vivid</h3>
-							<div class="work-descr">
-
-							</div>
-						</div>
+					<div class="desc">Add a description of the image here</div>
+				</div>
+			</div>
+						  
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6399.jpg">
+					<img src="images/gallery/fishfry/0A0A6399.jpg" alt="Trolltunga Norway" width="300" height="200">
 					</a>
-				</li>
-				<!-- End Work Item -->
-
-				<!-- Work Item (External Page) -->
-
-				<!-- End Work Item -->
-
-
-			</ul>
-			<!-- End Works Grid -->
-
-		</div>
-		<!-- Contents of first window -->
-		<div id="first-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img src="images/portfolio/image1.png" alt="Keon Wolfe" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Keon Wolfe
-								<br/>
-							</font>
-						</center>
-					</div>
+					<div class="desc">Add a description of the image here</div>
 				</div>
 			</div>
-		</div>
-
-		<div id="second-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/image2.png" alt="Zeek Burse" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Zeek Burse
-								<br/>
-								<!--With a voice that captivates and can draw stirring emotions while weaving through multiple genres of music, Zeek, previously known as “The Experience” for just that reason, brings a fierce artistic dynamic to music. Honing a unique style that encompasses rock and soul, Zeek has spent the last year performing across the United States and in London, UK. He is also one of the lead vocalists for the Worldtown Sound System, an eclectic house band. Zeek has a spark that lights up the stage and the hearts of his listeners wherever he goes. Seeing him perform live is definitely an experience not to be missed!</font>-->
-						</center>
-					</div>
+			  
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6207.jpg">
+					<img src="images/gallery/fishfry/0A0A6207.jpg" alt="Trolltunga Norway" width="300" height="200">
+					</a>
+					<div class="desc">Add a description of the image here</div>
 				</div>
 			</div>
-		</div>
-
-		<div id="third-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/image3bio.jpg" alt="Janee Latrice" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Janee Latrice
-								<br/> Janee Latrice is a recording artist who hails from West Philadelphia. A product of military
-								parents and a CAPA High School alum, Latrice values the exposure to international art
-								and culture she has been privileged to experience. Though she stands in a lane all her
-								own, some of her favorite artists to emulate include Jill Scott, Michael Jackson and
-								Amy Winehouse. She was most recently invited to perform in Philadelphia for the Democratic
-								National Convention's Delegates Welcome Reception and consistently takes stages all around
-								her city. Janee is grateful for every opportunity to grace a stage, and prides herself
-								on leaving her supporters with an impactful experience each time!"</font>
-						</center>
-					</div>
+			  
+			<!-- Start of 4th Row -->
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6336.jpg">
+					<img src="images/gallery/fishfry/0A0A6336.jpg" alt="Trolltunga Norway" width="300" height="200">
+					</a>
+					<div class="desc">Add a description of the image here</div>
 				</div>
 			</div>
-		</div>
-
-		<div id="fourth-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/image4.jpg" alt="Beatpeace" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Sap Sounds
-								<br/> Sap Sounds makes a conscious effort to construct music compositions and authentic works
-								that express his eclectic, organic artistry with true musicianship. His mission is to
-								lend in the rebirth of genuine, savage, untamed, love in melody. Sap can’t accurately
-								be defined by nor confined to one genre over the other. He is the antithesis of modern
-								music, due to an unorthodox approach to music, diverse influence, and a multicultural
-								upbringing, Sap seamlessly weaves and crosses Hip-Hop, Acoustic Soul, Pop, R&B, and Jazz.
-								</font>
-						</center>
-					</div>
+			  
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6179.jpg">
+					<img src="images/gallery/fishfry/0A0A6179.jpg" alt="Trolltunga Norway" width="300" height="200">
+					</a>
+					<div class="desc">Add a description of the image here</div>
 				</div>
 			</div>
-		</div>
-
-		<div id="fifth-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/davidlyvebio.jpg" alt="David Lyve" style="filter:grayscale(100%);" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">David Lyve
-								<br/> Yes, I’m David Lyve, that’s Lyve with a Y and not an I! As you have assumed correctly,
-								I help lost ears find their good music home, through singing, songwriting, producing,
-								and real instrument playing. But you can just say I am a recording artist if that’s easier.
-								People have turned into fans of my music when they are feeling exhausted of the over
-								computerized gimmicks that rob them of a chance to ‘feel.’I have 10+ years background
-								in singing, songwriting, performing, musicianship, and producing. I’ve shared stages
-								with huge artist, not as huge artist, and many in-between artists. I have an emotional
-								and spiritual perspective on what it takes to pique an audience’s attention and build
-								the obsession.</font>
-						</center>
-					</div>
+			  
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6330.jpg">
+					<img src="images/gallery/fishfry/0A0A6330.jpg" alt="Trolltunga Norway" width="300" height="200">
+					</a>
+					<div class="desc">Add a description of the image here</div>
 				</div>
 			</div>
-		</div>
-
-		<!--<div id="sixth-popup" class="mfp-hide white-popup">
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3" >
-			<center>
-				<img class="work-img" src="images/portfolio/image7.jpg" alt="Will Wright" />
-			</center>
-		</div>  
-	</div>
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<center>
-				<font color="white">Will Wright
-				<br/>
-				</font>
-			</center>
-		</div>  
-	</div>
-</div>
-</div>-->
-
-		<div id="seventh-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/image6.jpg" alt="Topp Fliight">
-						</center>
-					</div>
+			  
+			<div class="responsive">
+				<div class="gallery">
+					<a target="_blank" href="images/gallery/fishfry/0A0A6256.jpg">
+					<img src="images/gallery/fishfry/0A0A6256.jpg" alt="Trolltunga Norway" width="300" height="200">
+					</a>
+					<div class="desc">Add a description of the image here</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Topp Fliight
-								<br/> Comedian ToppFliight born Tirese Rhone has a natural-born ability to take his audience
-								to higher heights when it comes to laughter. ToppFlight was born and raised in the city
-								of “Brotherly Love”, Philadelphia, PA.</font>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="eigth-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/image8.jpg" alt="Chris Cotton" style="filter:grayscale(100%);" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Chris Cotton
-								<br/> Chris Cotton began performing Stand Up Comedy in the same city he was born and raised
-								in(Philadelphia, Pennsylvania). Chris has worked with many of the best national headliners
-								including Artie Lange, Keith Robinson, Godfrey, Bret Ernst, Tommy Davidson, Kevin Hart,
-								Judah Frielander, and Hannibal Burress.</font>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="ninth-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/anthonyhall.jpg" alt="Anthony Hall" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Anthony Hall</font>
-							<br/>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="tenth-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/djb.jpg" alt="DJB" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">DJB</font>
-							<br/>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="eleventh-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/quadstroll17.jpg" alt="Quad Stroll 17" style="filter:grayscale(100%);" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Quad Stroll 17</font>
-							<br/>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="twelve-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/sankofa.jpg" alt="William Sankofa" style="filter:grayscale(100%);" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">William Sankofa
-								<br/> William Sankofa - singer songwriter and producer from Clayton NJ. William Sankofa combines
-								soul music , RnB, Hip Hop, Reggae, Rock and Gospel into the William Sankofa's sound that
-								promotes Love for self and all mankind. William Sankofa and TheLoveMovement continues
-								move audiences with a message.</font>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="jakeya-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/Jakeya.jpg" alt="Jakeya" style="filter:grayscale(100%);" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Jakeya</font>
-							<br/> As an entertainer, songwriter, and vocal coach Jakeya has twenty five years of successful
-							music experience. Jakeya has blown audiences away time after time with her pristine voice
-							and dynamic stage presence. As a Philadelphia native, Jakeya was always surrounded by music.</font>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="vivid-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/vivid.jpg" alt="Vivid" style="filter:grayscale(100%);" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Vivid</font>
-							<br/>
-							</font>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="jeremy-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img src="images/portfolio/jeremy.jpg" alt="Jeremy Isaac" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Jeremy Isaac
-								<br/>
-							</font>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="lilmo-popup" class="mfp-hide white-popup">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<img class="work-img" src="images/portfolio/lilmo.jpg" alt="Lil Mo" />
-						</center>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<center>
-							<font color="white">Lil Mo'</font>
-							<br/>
-						</center>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-</div>
-</section>
->>>>>>> d6dcb67ba624215aaa018977172bddba2b07de6b
+			</div> 
+			
+			<div class="clearfix"></div>
+			
+			<!-- <div style="padding:6px;">
+			  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+			  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+			</div> -->
+		</section>
 
 	<div class="contact" id="contact">
 		<div class="wrap">
