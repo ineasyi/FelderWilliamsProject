@@ -156,7 +156,14 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 							<a href="https://www.thefelder-williamsproject.com" class="da-link">Home</a>
 						</li>
 						<li>
-							<a href="#Events" class="da-link scroll">Events</a>
+							<div class="dropdown">
+								<a href="#Events" class="da-link" style="color:gray">Events</a>
+								<div class="dropdown-content">
+									<a href="#Events">2nd Annual Charity Event</a>
+									<a href="nextevent.html">Pack & Bounce Party</a>
+									<a href="pasteventgallery.html">Past Events</a>
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="https://www.thefelder-williamsproject.com/about.html" class="da-link">About</a>
@@ -189,9 +196,10 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			<!--- start-da-slider -->
 			<div class="da-slide2">
 				<div class=purpose-title>Support the Children!</div>
-				<div class="purpose">The Felder-Williams project aims to help bring more awareness to the community about child abuse and helping the children 
-					rise above the obstacles that currently stand in their way.  We appreciate any donation amount to help the families and children  in need!
-				</div>				
+				<div class="purpose">The Felder-Williams project aims to help bring more awareness to the community about child abuse and helping the children
+					rise above the obstacles that currently stand in their way. We appreciate any donation amount to help the families and
+					children in need!
+				</div>
 				<div class="action-btn-container">
 					<div class="sbs-or-row mbottom10">
 						<a href="getinvolved.html" class="da-link action-btn">Get Involved!</a>
@@ -199,7 +207,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 					<div class="sbs-or-row mbottom10">
 						<a href="donate.html" class="da-link action-btn">Donate Now!</a>
 					</div>
-				</div>				
+				</div>
 				<div class="clear"> </div>
 				<a href="#EventGallery" class="scroll">
 					<span class="da-img"> </span>
@@ -225,100 +233,93 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 							<div class="event-info-title">
 								<div>2nd Annual Charity Event</div>
 								<div>The Felder-Williams Project</div>
-							</div>					
-							<div class="event-info-section">
-								The 2nd annual charity event includes musical and comedic performances with the intent to help victims of trafficking.  Come out and help support our cause simply by a enjoying
-								a night out with great entertainment!
 							</div>
 							<div class="event-info-section">
-								<span class="event-label">Date: </span>Saturday, May 26<sup>th</sup><br>  			
-							</div>	
-							<div class="event-info-section">
-								<span class="event-label">Time: </span> 7PM - 11PM<br>  			
-							</div>		
-							<div class="event-info-section">
-								<span class="event-label">Location:</span><br> 
-								H&H Banquet Hall<br>  
-								2036 Haines St.<br> 
-								Phila, PA 19138<br> 
+								The 2nd annual charity event includes musical and comedic performances with the intent to help victims of trafficking. Come
+								out and help support our cause simply by a enjoying a night out with great entertainment!
 							</div>
-							<div class="event-info-section-tickets"> 
-								<span class="event-label">GET TICKETS NOW!</span><br> 
-								
+							<div class="event-info-section">
+								<span class="event-label">Date: </span>Saturday, May 26
+								<sup>th</sup>
+								<br>
+							</div>
+							<div class="event-info-section">
+								<span class="event-label">Time: </span> 7PM - 11PM
+								<br>
+							</div>
+							<div class="event-info-section">
+								<span class="event-label">Location:</span>
+								<br> H&H Banquet Hall
+								<br> 2036 Haines St.
+								<br> Phila, PA 19138
+								<br>
+							</div>
+							<div class="event-info-section-tickets">
+								<span class="event-label">GET TICKETS NOW!</span>
+								<br>
+
 								<!-- <a href="https://www.paypal.me/TFWProject/35" class="da-link action-btn">Premium Seating ($35)</a><br>
 								<a href="https://www.paypal.me/TFWProject/40" class="da-link action-btn">VIP Seating ($40)</a><br>
 								<a href="https://www.paypal.me/TFWProject/300" class="action-btn">Tables ($300 max 8)</a><br>  -->
-								
-								 <form action="https://casinternal.com/api/stripe" method="POST" name="PRM" id="PRM">
-													<!-- <select name="quantity" id="ticket_PRM">
+
+								<form action="https://casinternal.com/api/stripe" method="POST" name="PRM" id="PRM">
+									<!-- <select name="quantity" id="ticket_PRM">
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
 															<option value="4">4</option>
 														</select>  -->
-														<input type="hidden" name="amount" id="amount" value="3500" />
-														<input type="hidden" name="description" id="description" value="PRM" />
-											<script
-											src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-											data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
-											data-amount="3500" 
-												data-name="The Felder-Williams Project" 
-												data-description="Charity Event - Premium Seating" 
-												data-zip-code="true" 
-												data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-												data-locale="auto"> 
-												</script> 
-												<button type="submit" class="custom-stripe-btn">Buy Premium Seating - <span id="spanPRM">$35</span></button>									 
-								</form> 
-								<form action="https://casinternal.com/api/stripe" method="POST" name="VIP" id="VIP"> 
-													<!-- <select name="quantity" id="ticket_VIP">
+									<input type="hidden" name="amount" id="amount" value="3500" />
+									<input type="hidden" name="description" id="description" value="PRM" />
+									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="3500"
+									 data-name="The Felder-Williams Project" data-description="Charity Event - Premium Seating" data-zip-code="true"
+									 data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"> 
+									</script>
+									<button type="submit" class="custom-stripe-btn">Buy Premium Seating -
+										<span id="spanPRM">$35</span>
+									</button>
+								</form>
+								<form action="https://casinternal.com/api/stripe" method="POST" name="VIP" id="VIP">
+									<!-- <select name="quantity" id="ticket_VIP">
 															<option value="1">1</option>
 															<option value="2">2</option>
 															<option value="3">3</option>
 															<option value="4">4</option>
 														</select>  -->
-														<input type="hidden" name="amount" id="amount" value="4000"/>
-														<input type="hidden" name="description" id="description" value="VIP" />
-												<script
-												src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-												data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
-												data-amount="4000" 
-												data-name="The Felder-Williams Project" 
-												data-description="Charity Event - VIP Seating" 
-												data-zip-code="true" 
-												data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-												data-locale="auto"> 
-												</script>	 
-												<button type="submit" class="custom-stripe-btn">Buy VIP Seating - <span id="spanVIP">$40</span></button>								 
-								</form> 
+									<input type="hidden" name="amount" id="amount" value="4000" />
+									<input type="hidden" name="description" id="description" value="VIP" />
+									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="4000"
+									 data-name="The Felder-Williams Project" data-description="Charity Event - VIP Seating" data-zip-code="true" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+									 data-locale="auto"> 
+									</script>
+									<button type="submit" class="custom-stripe-btn">Buy VIP Seating -
+										<span id="spanVIP">$40</span>
+									</button>
+								</form>
 								<form action="https://casinternal.com/api/stripe" method="POST" name="TBL" id="TBL">
-												<!-- <select name="quantity" id="ticket_TBL">
+									<!-- <select name="quantity" id="ticket_TBL">
 														<option value="1" selected>1</option>
 													</select>  -->
-													<input type="hidden" name="amount" id="amount" value="30000" />
-													<input type="hidden" name="description" id="description" value="TBL" />
-											<script 
-											src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
-											data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" 
-											data-amount="30000" 
-											data-name="The Felder-Williams Project" 
-											data-description="Charity Event - Table Seating" 
-											data-zip-code="true" 
-											data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
-											data-locale="auto"> 
-											</script> 
-											<button type="submit" class="custom-stripe-btn">Buy Table Seating - <span id="spanTBL">$300</span></button>								 
+									<input type="hidden" name="amount" id="amount" value="30000" />
+									<input type="hidden" name="description" id="description" value="TBL" />
+									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="30000"
+									 data-name="The Felder-Williams Project" data-description="Charity Event - Table Seating" data-zip-code="true" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+									 data-locale="auto"> 
+									</script>
+									<button type="submit" class="custom-stripe-btn">Buy Table Seating -
+										<span id="spanTBL">$300</span>
+									</button>
 								</form>
-								 <script> 
+								<script> 
 									// Hide eachs stripe button, replaces with submit 
-									document.getElementsByClassName("stripe-button-el")[0].style.display = 'none'; 
-									document.getElementsByClassName("stripe-button-el")[1].style.display = 'none'; 
-									document.getElementsByClassName("stripe-button-el")[2].style.display = 'none'; 
+									document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+									document.getElementsByClassName("stripe-button-el")[1].style.display = 'none';
+									document.getElementsByClassName("stripe-button-el")[2].style.display = 'none';
 
 									// $("#ticket_PRM").on("change", function(){
 									// 	var qt = $("#ticket_PRM").val();
 									// 	var total = (qt * 3500);
-										
+
 									// 	$("#PRM > input#amount").attr("value", total);
 									// 	$("#spanPRM").html("$"+(total/100) + ".00");
 									// });
@@ -326,20 +327,20 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 									// $("#ticket_VIP").on("change", function(){
 									// 	var qt = $("#ticket_VIP").val();
 									// 	var total = (qt * 4000);
-										
+
 									// 	$("#VIP > input#amount").attr("value", total);
 									// 	$("#spanVIP").html("$"+(total/100) + ".00");
 									// });
-									
+
 									// $("#ticket_TBL").on("change", function(){
 									// 	var qt = $("#ticket_TBL").val();
 									// 	var total = (qt * 30000);
-										
+
 									// 	$("#TBL > input#amount").attr("value", total);
 									// 	$("#spanTBL").html("$"+(total/100) + ".00");
 									// });
 								</script>
-							</div>			
+							</div>
 						</div>
 					</div>
 				</div>
@@ -386,7 +387,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 
 							<input type="text" class="textbox" value="Your Name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your  Name';}">
 							<input type="text" class="textbox" value="Your Email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
-							<input type="text" name="siteKey" class="textbox" id="response" value=""  style="display:none;" />
+							<input type="text" name="siteKey" class="textbox" id="response" value="" style="display:none;" />
 							<input type="text" name="siteId" id="siteId" value="FWP" style="display:none;" />
 							<div class="clear"> </div>
 							<span>
@@ -395,8 +396,8 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 							<div class="clear"></div>
 						</form>
 						<form action="https://casinternal.com/api/values" name="tokenForm" method="post" id="tokenForm" style="display:none;">
-                            <input type="text" name="siteId" id="siteId" value="FWP" />
-                        </form>
+							<input type="text" name="siteId" id="siteId" value="FWP" />
+						</form>
 					</div>
 				</div>
 
@@ -445,7 +446,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 						<div id="portfoliolist">
 							<div class="gallery">
 								<div class="img-w">
-										<img src="images/singlestaff.jpg" alt="" />									
+									<img src="images/singlestaff.jpg" alt="" />
 								</div>
 								<div class="img-w">
 									<img src="images/sonnyandkids.jpg" alt="" />
@@ -460,17 +461,17 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 									<img src="images/feldermic.jpg" alt="" />
 								</div>
 								<div class="img-w">
-										<img src="tfx/0A0A4754.jpg" alt="" />
+									<img src="tfx/0A0A4754.jpg" alt="" />
 								</div>
 								<div class="img-w">
 									<img src="tfx/0A0A4686.jpg" alt="" />
 								</div>
 								<div class="img-w">
-										<img src="images/backdropstaff.jpg" alt="" />
+									<img src="images/backdropstaff.jpg" alt="" />
 								</div>
 								<div class="img-w">
-										<img src="images/check.jpg" alt="" />
-									
+									<img src="images/check.jpg" alt="" />
+
 								</div>
 							</div>
 						</div>
