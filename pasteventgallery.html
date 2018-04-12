@@ -97,53 +97,120 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 	<style>
-			div.gallery {
-				border: 1px solid #ccc;
+		.gallery-container {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.gallery-event-list {
+			float: left;
+			width: 25%;
+		}
+
+		.gallery-title {
+			color: black;
+			text-align: center;
+		}
+
+		.gallery-photos {
+			float: left;
+			width: 75%;
+		}
+
+		div.gallery {
+			border: 1px solid #ccc;
+		}
+
+		div.gallery:hover {
+			border: 1px solid #777;
+		}
+
+		div.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		ul.event-list {
+			height: max-content;
+			width: 90%;
+			border-right: 1px solid black;
+		}
+
+		ul.event-list li {
+			width: 95%;
+			color: black;
+			height: 25px;
+			line-height: 25px;
+			padding-left: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+
+		ul.event-list li:hover {
+			border: 1px solid #1BBC9B;
+			font-weight: bold;
+		}
+
+		ul.event-list li.selected {
+			background-color: #1BBC9B;
+			color: white;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+		}
+
+		@media only screen and (max-width: 700px) {
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
 			}
-			
-			div.gallery:hover {
-				border: 1px solid #777;
-			}
-			
-			div.gallery img {
+
+			ul.event-list, .gallery-event-list, .gallery-photos {
 				width: 100%;
-				height: auto;
-			}
-			
-			div.desc {
-				padding: 15px;
+				border: none;
 				text-align: center;
 			}
-			
-			* {
-				box-sizing: border-box;
-			}
-			
+		}
+
+		@media only screen and (max-width: 500px) {
 			.responsive {
-				padding: 0 6px;
-				float: left;
-				width: 24.99999%;
+				width: 100%;
 			}
-			
-			@media only screen and (max-width: 700px) {
-				.responsive {
-					width: 49.99999%;
-					margin: 6px 0;
-				}
+
+			ul.event-list, .gallery-event-list, .gallery-photos {
+				width: 100%;
+				border: none;
+				text-align: center;
 			}
-			
-			@media only screen and (max-width: 500px) {
-				.responsive {
-					width: 100%;
-				}
-			}
-			
-			.clearfix:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-			</style>
+		}
+
+		
+	</style>
 </head>
 
 <body>
@@ -193,164 +260,264 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 	</div>
 
 	<section class="page-section" id="portfolio">
-			<center><h2 style="color: black;">Fish Fry Fundraiser</h2>
-			<h4 style="color: black;"></h4></center>
-			
-			<!-- Start of 1st Row -->
-			<div class="responsive">
-			  <div class="gallery">
-				<a target="_blank" href="images/gallery/fishfry/0A0A6174.jpg">
-				  <img src="images/gallery/fishfry/0A0A6174.jpg" alt="Trolltunga Norway" width="300" height="200">
-				</a>
-				<div class="desc"></div>
-			  </div>
+		<div class="gallery-container">
+			<div class="gallery-event-list">
+				<h2 style="color: black;">Past Events</h2>
+				<ul class="event-list">
+					<li id="FishFry" class="event-list-item">Fish Fry Fundraiser</li>
+					<li id="FirstCharity" class="event-list-item">1st Annual Charity Event</li>
+					<li id="Cookout" class="event-list-item">The Cookout</li>
+				</ul>
 			</div>
-			
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6176.jpg">
-					<img src="images/gallery/fishfry/0A0A6176.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-			
-			<div class="responsive">
-					<div class="gallery">
-						<a target="_blank" href="images/gallery/fishfry/0A0A6182.jpg">
-						<img src="images/gallery/fishfry/0A0A6182.jpg" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-						<div class="desc"></div>
+			<div class="gallery-photos">
+				<!-- Gallery Title/ Event Name -->
+				<center>
+					<h2 class="gallery-title"></h2>
+				</center>
+				<!-- FISH FRY -->
+				<div id="FishFryGallery" class="album">
+					<!-- Start of 1st Row -->
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6174.jpg">
+								<img src="images/gallery/fishfry/0A0A6174.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6176.jpg">
+								<img src="images/gallery/fishfry/0A0A6176.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6182.jpg">
+								<img src="images/gallery/fishfry/0A0A6182.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6189.jpg">
+								<img src="images/gallery/fishfry/0A0A6189.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<!-- Start of 2nd Row -->
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6222.jpg">
+								<img src="images/gallery/fishfry/0A0A6222.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6262.jpg">
+								<img src="images/gallery/fishfry/0A0A6262.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6346.jpg">
+								<img src="images/gallery/fishfry/0A0A6346.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6296.jpg">
+								<img src="images/gallery/fishfry/0A0A6296.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<!-- Start of 3rd Row -->
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6314.jpg">
+								<img src="images/gallery/fishfry/0A0A6314.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6370.jpg">
+								<img src="images/gallery/fishfry/0A0A6370.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6399.jpg">
+								<img src="images/gallery/fishfry/0A0A6399.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6207.jpg">
+								<img src="images/gallery/fishfry/0A0A6207.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<!-- Start of 4th Row -->
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6336.jpg">
+								<img src="images/gallery/fishfry/0A0A6336.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6179.jpg">
+								<img src="images/gallery/fishfry/0A0A6179.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6330.jpg">
+								<img src="images/gallery/fishfry/0A0A6330.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6256.jpg">
+								<img src="images/gallery/fishfry/0A0A6256.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
 					</div>
 				</div>
+				<!-- NEW GALLERY 1-->
+				<div id="FirstCharityGallery" class="album">
+					<!-- Start of 1st Row -->
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6174.jpg">
+								<img src="images/gallery/fishfry/0A0A6174.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
 
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6189.jpg">
-					<img src="images/gallery/fishfry/0A0A6189.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6176.jpg">
+								<img src="images/gallery/fishfry/0A0A6176.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
 				</div>
-			</div>
+				<!-- NEW GALLERY 2-->
+				<div id="CookoutGallery" class="album">
+					<!-- Start of 1st Row -->
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6174.jpg">
+								<img src="images/gallery/fishfry/0A0A6174.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
 
-			<!-- Start of 2nd Row -->
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6222.jpg">
-					<img src="images/gallery/fishfry/0A0A6222.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6176.jpg">
+								<img src="images/gallery/fishfry/0A0A6176.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6179.jpg">
+								<img src="images/gallery/fishfry/0A0A6179.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
 
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6262.jpg">
-					<img src="images/gallery/fishfry/0A0A6262.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6330.jpg">
+								<img src="images/gallery/fishfry/0A0A6330.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
 
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6346.jpg">
-					<img src="images/gallery/fishfry/0A0A6346.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="images/gallery/fishfry/0A0A6256.jpg">
+								<img src="images/gallery/fishfry/0A0A6256.jpg" alt="Trolltunga Norway" width="300" height="200">
+							</a>
+							<div class="desc"></div>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.album').css('display', 'none');
 
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6296.jpg">
-					<img src="images/gallery/fishfry/0A0A6296.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
+				$("ul.event-list li").click(function () {
+					$("ul.event-list li").removeClass("selected");
+					$(this).addClass("selected")
+					$('.album').css('display', 'none');
+					$('.gallery-title').html(this.id);
+					$('#' + this.id + 'Gallery').css('display', 'block');
 
-			<!-- Start of 3rd Row -->
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6314.jpg">
-					<img src="images/gallery/fishfry/0A0A6314.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-						  
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6370.jpg">
-					<img src="images/gallery/fishfry/0A0A6370.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-						  
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6399.jpg">
-					<img src="images/gallery/fishfry/0A0A6399.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-			  
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6207.jpg">
-					<img src="images/gallery/fishfry/0A0A6207.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-			  
-			<!-- Start of 4th Row -->
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6336.jpg">
-					<img src="images/gallery/fishfry/0A0A6336.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-			  
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6179.jpg">
-					<img src="images/gallery/fishfry/0A0A6179.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-			  
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6330.jpg">
-					<img src="images/gallery/fishfry/0A0A6330.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div>
-			  
-			<div class="responsive">
-				<div class="gallery">
-					<a target="_blank" href="images/gallery/fishfry/0A0A6256.jpg">
-					<img src="images/gallery/fishfry/0A0A6256.jpg" alt="Trolltunga Norway" width="300" height="200">
-					</a>
-					<div class="desc"></div>
-				</div>
-			</div> 
-			
-			<div class="clearfix"></div>
-			
-			<!-- <div style="padding:6px;">
+				});
+
+				// Default Gallery Shown
+				$('ul.event-list li').first().click();
+			});
+		</script>
+		<div class="clearfix"></div>
+
+		<!-- <div style="padding:6px;">
 			  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
 			  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
 			</div> -->
-		</section>
+	</section>
 
 	<div class="contact" id="contact">
 		<div class="wrap">
