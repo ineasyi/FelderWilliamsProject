@@ -378,7 +378,6 @@ body {
 	-o-box-sizing: border-box;
 	width: 19%;
 	margin: 0% 3%;
-	display: none;
 	float: left;
 }
 .portfolio-wrapper {
@@ -996,9 +995,9 @@ padding: 0.5em 0.7em;
 .nav > ul > li > a {
 padding: 0.5em 0.7em;
 }
-#portfoliolist>div{
+/* #portfoliolist>div{
 	display:none;
-}
+} */
 .dc_zoom_css span.roll_css6 .social {
 	width: 67%;
 	height: 19%;
@@ -1145,9 +1144,7 @@ padding: 3em 0em;
 .gallery1 {
 	padding: 3em 0em;
 }
-#portfoliolist>div{
-	display:none;
-}
+
 .grid {
 	width: 45%;
 	/* margin-right: 10%; */
@@ -1296,10 +1293,10 @@ padding: 3em 1em;
 .gallery1 {
 	padding: 0em 0em;
 }
-#portfoliolist>.hide
+/* #portfoliolist>.hide
 {
 	display: block;
-}
+} */
 /* #portfoliolist>div{
 	display:none;
 } */
@@ -1310,9 +1307,9 @@ padding: 3em 1em;
 	margin-bottom: 10%;
 }
 
-.gallery {
+/* .gallery {
 	display: none;
-}
+} */
 
 .grid:nth-child(2) {
 	margin-right: 0%;
@@ -1445,13 +1442,13 @@ padding: 1.2em 0em;
 .gallery1 {
 	padding: 0em 0em;
 }
-#portfoliolist>div{
+/* #portfoliolist>div{
 	display:none;
 }
 #portfoliolist>.hide
 {
 	display: none;
-}
+} */
 .grid {
 	width: 100%;
 	margin-right: 0%;
