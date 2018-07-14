@@ -52,58 +52,19 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 	<!-- Original Tags -->
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/gallerystyles/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/imgeffect.css" />
 	<script src="js/jquery.min.js"></script>
 	<!-- start gallery Script -->
 	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-	<script type="text/javascript">
-		$(function () {
 
-			var filterList = {
-
-				init: function () {
-
-					// MixItUp plugin
-					// https://mixitup.io
-					$('#portfoliolist').mixitup({
-						targetSelector: '.portfolio',
-						filterSelector: '.filter',
-						effects: ['fade'],
-						easing: 'snap',
-						// call the hover effect
-						onMixEnd: filterList.hoverEffect()
-					});
-
-				},
-
-				hoverEffect: function () {
-
-					// Simple parallax effect
-					$('#portfoliolist .portfolio').hover(
-						function () {
-							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
-							$(this).find('img').stop().animate({ top: 0 }, 500, 'easeOutQuad');
-						},
-						function () {
-							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeInQuad');
-							$(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
-						}
-					);
-
-				}
-
-			};
-
-			// Run the show!
-			filterList.init();
-
-
-		});	
-	</script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+	<script src="js/galleryjs/all.js" type="text/html"></script>
+	<script src="js/galleryjs/script.js" type="text/html"></script>
 	<script>
 		$(document).ready(function () {
 			$('.popup-with-zoom-anim').magnificPopup({
@@ -135,6 +96,123 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
+	<style>
+		.gallery-container {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.gallery-event-list {
+			float: left;
+			width: 25%;
+		}
+
+		.gallery-title {
+			color: black;
+			text-align: center;
+		}
+
+		.gallery-photos {
+			float: left;
+			width: 75%;
+		}
+
+		div.gallery {
+			border: 1px solid #ccc;
+		}
+
+		div.gallery:hover {
+			border: 1px solid #777;
+		}
+
+		div.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		ul.event-list {
+			height: max-content;
+			width: 90%;
+			border-right: 1px solid black;
+		}
+
+		ul.event-list li {
+			width: 95%;
+			color: black;
+			height: 25px;
+			line-height: 25px;
+			padding-left: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+
+		ul.event-list li:hover {
+			border: 1px solid #1BBC9B;
+			font-weight: bold;
+		}
+
+		ul.event-list li.selected {
+			background-color: #1BBC9B;
+			color: white;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+		}
+
+		@media only screen and (max-width: 700px) {
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
+			}
+
+			ul.event-list,
+			.gallery-event-list,
+			.gallery-photos {
+				width: 100%;
+				border: none;
+				text-align: center;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+			.responsive {
+				width: 100%;
+			}
+
+			ul.event-list,
+			.gallery-event-list,
+			.gallery-photos {
+				width: 100%;
+				border: none;
+				text-align: center;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -159,10 +237,9 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 							<div class="dropdown">
 								<a href="#Events" class="da-link" style="color:gray">Events</a>
 								<div class="dropdown-content">
-                                        <a href="index.html#Events">2nd Annual Charity Event</a>
-										<a href="packbounce.html">Pack & Bounce Party</a>
-										<a href="pasteventgallery.html">Past Events</a>
-										<a href="videos.html">Videos</a>
+									<a href="index.html#Events">2nd Annual Charity Event</a>
+									<a href="packbounce.html">Pack & Bounce Party</a>
+									<a href="pasteventgallery.html">Past Events</a>
 								</div>
 							</div>
 						</li>
@@ -184,58 +261,44 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 
-	<!-----start-event-------->
+	
+		<div class="videos">
+			<h1>Community Resource Event </h1>
+			<video  src="C:\Users\natea\Documents\GitHub\FelderWilliamsProject\tfx\videos\FELDER SERVICE.mp4" controls type="video/mp4"></video>
+			<h1>The Felder Williams Charity Event</h1>
 
-	<div class="event" id="Events">
-		<div class="wrap">
-			<h2>Help the Philadelphia Children's Alliance</h2>
-			<div class="container">
-				<div class="sbs-or-row" style="margin: 30px 0;">
-					<img class="post-person" src="tfx/v3flyer.jpg">
-				</div>
-				<div class="sbs-or-row" style="margin: 30px 0;">
-					<div class="desc2">
-						<div class="event-details">
-							<div class="event-info-title">
-                                    <div>The Felder-Williams Project</div>
-								<div>Pack & Bounce Party</div>
-								
-							</div>
-							<div class="event-info-section">
-                                The Felder-Williams Project will be hosting this event. Kids are welcomed to play as we prepare
-                                care packages for trafficking survivors.
-                                <br /><br />
-                                If you would like to volunteer, please fill out the contact form below! We will also be accepting
-                                donation in the form of clothes & unboxed toys.  We appreciate all your help and hope to see you
-                                there!
-							</div>
-							<div class="event-info-section">
-								<span class="event-label">Date: </span>Saturday, May 12
-								<sup>th</sup>
-								<br>
-							</div>
-							<div class="event-info-section">
-								<span class="event-label">Time: </span> 5PM - 7PM
-								<br>
-							</div>
-							<div class="event-info-section">
-								<span class="event-label">Location:</span>
-								<br> 
-								<br> 550 Foundry Rd.
-								<br> East Norriton, PA 19403
-								<br>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+			<video  src="C:\Users\natea\Documents\GitHub\FelderWilliamsProject\tfx\videos\felder.mp4" controls type="video/mp4"></video>
+			
+		</div>
+
+
+						
 			</div>
 		</div>
-		<div class="clear"> </div>
-	</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.album').css('display', 'none');
 
+				$("ul.event-list li").click(function () {
+					$("ul.event-list li").removeClass("selected");
+					$(this).addClass("selected")
+					$('.album').css('display', 'none');
+					$('.gallery-title').html(this.id);
+					$('#' + this.id + 'Gallery').css('display', 'block');
 
-	<!---------end-event------------>
+				});
+
+				// Default Gallery Shown
+				$('ul.event-list li').first().click();
+			});
+		</script>
+		<div class="clearfix"></div>
+
+		<!-- <div style="padding:6px;">
+			  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+			  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+			</div> -->
+	</section>
 
 	<div class="contact" id="contact">
 		<div class="wrap">
