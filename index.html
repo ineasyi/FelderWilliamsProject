@@ -135,6 +135,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
+	<script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
@@ -153,26 +154,16 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 				<div class="nav">
 					<ul>
 						<li class="active">
-							<a href="https://www.thefelder-williamsproject.com" class="da-link">Home</a>
+							<a href="index.html" class="da-link">Home</a>
 						</li>
 						<li>
-							<div class="dropdown">
-								<a href="#" class="da-link" style="color:gray">Events</a>
-								<div class="dropdown-content">
-									<a href="#Events">2nd Annual Charity Event</a>
-									<a href="parkbounce.html">Pack & Bounce Party</a>
-									<a href="pasteventgallery.html">Past Events</a>
-								</div>
-							</div>
+							<a href="about.html" class="da-link">About</a>
 						</li>
 						<li>
-							<a href="https://www.thefelder-williamsproject.com/about.html" class="da-link">About</a>
+							<a href="donate.html" class="da-link">Donate</a>
 						</li>
 						<li>
-							<a href="https://www.thefelder-williamsproject.com/donate.html" class="da-link">Donate</a>
-						</li>
-						<li>
-							<a href="https://www.thefelder-williamsproject.com/contact.html" class="da-link">Contact</a>
+							<a href="contact.html" class="da-link">Contact</a>
 						</li>
 						<div class="clear"> </div>
 					</ul>
@@ -195,10 +186,12 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 		<div class="wrap">
 			<!--- start-da-slider -->
 			<div class="da-slide2">
-				<div class=purpose-title>Support the Children!</div>
-				<div class="purpose">The Felder-Williams project aims to help bring more awareness to the community about child abuse and helping the children
-					rise above the obstacles that currently stand in their way. We appreciate any donation amount to help the families and
-					children in need!
+				<div class=purpose-title ntm="Y">Support the Children!</div>
+				<div class="purpose" ntm="Y">The Felder-Williams Project aspires to increase awareness in
+					the community on every facet of child abuse; along with
+					encouraging children to grow through obstacles that stand in their way.<br /><br />
+					We, at The Felder-Williams Project nonprofit organization, graciously accept any monetary donations 
+					given in support of helping the families and children in need!
 				</div>
 				<div class="action-btn-container">
 					<div class="sbs-or-row mbottom10">
@@ -225,33 +218,34 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			<h2>Next Event</h2>
 			<div class="container">
 				<div class="sbs-or-row" style="margin: 30px 0;">
-					<img class="post-person" src="images/img_1927.png">
+					<img class="post-person" src="images/eventFlyer.jpg">
 				</div>
 				<div class="sbs-or-row" style="margin: 30px 0;">
 					<div class="desc2">
 						<div class="event-details">
 							<div class="event-info-title">
-								<div>2nd Annual Charity Event</div>
+								<div>Business Networking Mixer</div>
 								<div>The Felder-Williams Project</div>
 							</div>
 							<div class="event-info-section">
-								The 2nd annual charity event includes musical and comedic performances with the intent to help victims of trafficking. Come
-								out and help support our cause simply by a enjoying a night out with great entertainment!
+								Business Networking Event is designed to provide a comfortable atmosphere for business professionals 
+								both interested in charitible giving and collaborating with others like-minded individuals.  Food and drinks
+								will be available.
 							</div>
 							<div class="event-info-section">
-								<span class="event-label">Date: </span>Saturday, May 26
-								<sup>th</sup>
+								<span class="event-label">Date: </span>Friday, February 22
+								<sup>nd</sup>
 								<br>
 							</div>
 							<div class="event-info-section">
-								<span class="event-label">Time: </span> 7PM - 11PM
+								<span class="event-label">Time: </span> 9PM - 11PM
 								<br>
 							</div>
 							<div class="event-info-section">
 								<span class="event-label">Location:</span>
-								<br> H&H Banquet Hall
-								<br> 2036 Haines St.
-								<br> Phila, PA 19138
+								<br> Iconic Performing Arts Academy
+								<br> 6139 Germantown Ave
+								<br> Phila, PA 19144
 								<br>
 							</div>
 							<div class="event-info-section-tickets">
@@ -262,84 +256,111 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 								<a href="https://www.paypal.me/TFWProject/40" class="da-link action-btn">VIP Seating ($40)</a><br>
 								<a href="https://www.paypal.me/TFWProject/300" class="action-btn">Tables ($300 max 8)</a><br>  -->
 
-								<form action="https://casinternal.com/api/stripe" method="POST" name="PRM" id="PRM">
-									<!-- <select name="quantity" id="ticket_PRM">
-															<option value="1">1</option>
-															<option value="2">2</option>
-															<option value="3">3</option>
-															<option value="4">4</option>
-														</select>  -->
-									<input type="hidden" name="amount" id="amount" value="3500" />
-									<input type="hidden" name="description" id="description" value="PRM" />
-									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="3500"
-									 data-name="The Felder-Williams Project" data-description="Charity Event - Premium Seating" data-zip-code="true"
-									 data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto"> 
+								<!-- <form action="https://www.casinternal.com/api/stripe" method="POST" name="NTW" id="NTW">
+									<input type="hidden" name="amount" id="amount" value="2000" />
+									<input type="hidden" name="type" id="amount" value="Networking" />
+									<input type="hidden" name="description" id="description" value="NTW" />
+									<input type="hidden" name="siteId" id="siteId" value="FWP" />
+									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+														data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="2000"
+														data-name="The Felder-Williams Project" 
+														data-description="Networking - Ticket" 
+														data-zip-code="true"
+														data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+														data-locale="auto">
 									</script>
-									<button type="submit" class="custom-stripe-btn">Buy Premium Seating -
-										<span id="spanPRM">$35</span>
+									<button type="submit" class="custom-stripe-btn">Buy 1 Ticket -
+										<span id="spanPRM">$20</span>
 									</button>
-								</form>
-								<form action="https://casinternal.com/api/stripe" method="POST" name="VIP" id="VIP">
-									<!-- <select name="quantity" id="ticket_VIP">
-															<option value="1">1</option>
-															<option value="2">2</option>
-															<option value="3">3</option>
-															<option value="4">4</option>
-														</select>  -->
-									<input type="hidden" name="amount" id="amount" value="4000" />
-									<input type="hidden" name="description" id="description" value="VIP" />
-									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="4000"
-									 data-name="The Felder-Williams Project" data-description="Charity Event - VIP Seating" data-zip-code="true" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-									 data-locale="auto"> 
-									</script>
-									<button type="submit" class="custom-stripe-btn" disabled>Buy VIP Seating -
-										<span id="spanVIP">SOLD OUT</span>
-									</button>
-								</form>
-								<form action="https://casinternal.com/api/stripe" method="POST" name="TBL" id="TBL">
-									<!-- <select name="quantity" id="ticket_TBL">
-														<option value="1" selected>1</option>
-													</select>  -->
-									<input type="hidden" name="amount" id="amount" value="30000" />
-									<input type="hidden" name="description" id="description" value="TBL" />
-									<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_live_OfNDAPZaA2pkIyKO1IlRAABB" data-amount="30000"
-									 data-name="The Felder-Williams Project" data-description="Charity Event - Table Seating" data-zip-code="true" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-									 data-locale="auto"> 
-									</script>
-									<button type="submit" class="custom-stripe-btn">Buy Table Seating -
-										<span id="spanTBL">$300</span>
-									</button>
-								</form>
-								<script> 
-									// Hide eachs stripe button, replaces with submit 
-									document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
-									document.getElementsByClassName("stripe-button-el")[1].style.display = 'none';
-									document.getElementsByClassName("stripe-button-el")[2].style.display = 'none';
-
-									// $("#ticket_PRM").on("change", function(){
-									// 	var qt = $("#ticket_PRM").val();
-									// 	var total = (qt * 3500);
-
-									// 	$("#PRM > input#amount").attr("value", total);
-									// 	$("#spanPRM").html("$"+(total/100) + ".00");
-									// });
-
-									// $("#ticket_VIP").on("change", function(){
-									// 	var qt = $("#ticket_VIP").val();
-									// 	var total = (qt * 4000);
-
-									// 	$("#VIP > input#amount").attr("value", total);
-									// 	$("#spanVIP").html("$"+(total/100) + ".00");
-									// });
-
-									// $("#ticket_TBL").on("change", function(){
-									// 	var qt = $("#ticket_TBL").val();
-									// 	var total = (qt * 30000);
-
-									// 	$("#TBL > input#amount").attr("value", total);
-									// 	$("#spanTBL").html("$"+(total/100) + ".00");
-									// });
-								</script>
+								</form> -->
+								<form action="https://www.casinternal.com/api/stripev2" method="post" id="payment-form">
+									<input type="hidden" name="eventKey" id="eventKey" value="06222019" />
+									
+									<input type="hidden" name="siteId" id="siteId" value="FWP" />
+									<div class="form-row">
+											<label for="amount">
+											  Total Amount 
+											</label><br />
+											<div name="amount" id="amountDiv">$<span id="amountSpan">30</span></div>
+											<input type="hidden" name="amount" id="amount" value="30" />
+										  </div>
+									<div class="form-row">
+										<label for="quantity">
+											Quanitity
+										</label>
+										<select name="quantity" id="quantity">
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+										</select>
+										<label for="type">
+												Ticket Type
+											</label>
+											<select name="type" id="type">
+													<option value="GA" selected>General Admission</option>
+													<option value="VIP">VIP Ticket</option>
+													<option value="SPR">Sponsor Ticket</option>
+											</select>
+										<input type="hidden" name="description" id="description" value="Networking Mixer" />
+										<input type="hidden" name="type" id="type" value="GA" />
+									</div>
+									<div class="form-row">
+									  <label for="card-element">
+										Credit or debit card
+									  </label>
+									  <div id="card-element">
+										<!-- A Stripe Element will be inserted here. -->
+									  </div>
+								  
+									  <!-- Used to display Element errors. -->
+									  <div id="card-errors" role="alert"></div>
+									</div>
+								  
+									<button>Submit Payment</button>
+								  </form>
+								  <script>
+									  function updatePrice(){
+											var qty = $('#quantity').val()
+											var t = $('#type').val();
+											if(t == "GA")
+											{
+												var total = parseInt(qty) * parseInt(30)
+												total = parseFloat(total).toFixed(2)
+												$("#amount").val(total)
+												$("#amountSpan").html(total)
+											}
+											else if(t == "VIP")
+											{
+												var total = parseInt(qty) * parseInt(60)
+												total = parseFloat(total).toFixed(2)
+												$("#amount").val(total)
+												$("#amountSpan").html(total)
+											}
+											else if(t == "SPR")
+											{
+												var total = parseInt(qty) * parseInt(100)
+												total = parseFloat(total).toFixed(2)
+												$("#amount").val(total)
+												$("#amountSpan").html(total)
+											}
+											else
+											{
+												var total = parseInt(qty) * parseInt(200)
+												total = parseFloat(total).toFixed(2)
+												$("#amount").val(total)
+												$("#amountSpan").html(total)
+											}
+										}
+									  $('#type').change(function(){
+										updatePrice();
+									  });
+									  $('#quantity').change(function(){
+										updatePrice();
+									  });
+								  </script>
 							</div>
 						</div>
 					</div>
@@ -349,30 +370,6 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 		<div class="clear"> </div>
 	</div>
 
-	<!--
-	<div class="event" id="Events">
-		<div class="wrap">
-			<h2>Next Event</h2>
-			<p>Saturday, May 26th - Charity Event</p>
-			<div class="event-grids">
-				<div class="grid">
-					<div class="dc_zoom_css">
-						<img class="post-person" src="images/img_1927.png">
-					</div>
-					<div class="desc">
-						<h3>2nd Annual Charity Event</h3>
-						<p>The Felder-Williams Project</p>
-						<p style="text-align:center;">The 2nd annual charity event includes musical and comedic performances with the intent to help victims of trafficking.  Come out and help support our cause simply by a enjoying
-							a night out with great entertainment!<br><a href="https://www.paypal.me/TFWProject/35" class="da-link action-btn">Premium Seating ($35)</a>
-							<br><a href="https://www.paypal.me/TFWProject/40" class="da-link action-btn">VIP Seating ($40)</a>
-							<br><a href="https://www.paypal.me/TFWProject/300" class="action-btn">Tables ($300)</a></p>
-					</div>
-				</div>
-				<div class="clear"> </div>
-			</div>
-		</div>
-	</div>
-	-->
 	<!---------end-event------------>
 
 	<div class="contact" id="contact">
@@ -383,7 +380,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 						<h2>Subscribe</h2>
 						<h4>Subscribe to stay informed on all the ways you can contribute.</h4>
 						<div class="clear" style="height: 15px"></div>
-						<form method="post" action="https://casinternal.com/api/values" name="subscribe">
+						<form method="post" action="https://www.casinternal.com/api/values" name="subscribe">
 
 							<input type="text" class="textbox" value="Your Name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your  Name';}">
 							<input type="text" class="textbox" value="Your Email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}">
@@ -395,7 +392,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 							</span>
 							<div class="clear"></div>
 						</form>
-						<form action="https://casinternal.com/api/values" name="tokenForm" method="post" id="tokenForm" style="display:none;">
+						<form action="https://www.casinternal.com/api/values" name="tokenForm" method="post" id="tokenForm" style="display:none;">
 							<input type="text" name="siteId" id="siteId" value="FWP" />
 						</form>
 					</div>
@@ -435,6 +432,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			<script src="js/jquery.scrollTo.js"></script>
 		</div>
 	</div>
+
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('#tokenForm').submit(function () { // catch the form's submit event
@@ -450,6 +448,60 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			});
 			$('#tokenForm').submit();
 		});
+	</script>
+	<script>
+		var stripe = Stripe('pk_test_If3vUVOioCMi6TnyZjpHZxbm');
+		var elements = stripe.elements();
+		var style = {
+			base: {
+				// Add your base input styles here. For example:
+				fontSize: '16px',
+				color: "#32325d",
+			}
+		};
+		// Create an instance of the card Element.
+		var card = elements.create('card', {style: style});
+
+		// Add an instance of the card Element into the `card-element` <div>.
+		card.mount('#card-element');
+
+		card.addEventListener('change', function(event) {
+		var displayError = document.getElementById('card-errors');
+		if (event.error) {
+			displayError.textContent = event.error.message;
+		} else {
+			displayError.textContent = '';
+		}
+		});
+
+		var form = document.getElementById('payment-form');
+		form.addEventListener('submit', function(event) {
+		event.preventDefault();
+
+		stripe.createToken(card).then(function(result) {
+			if (result.error) {
+			// Inform the customer that there was an error.
+			var errorElement = document.getElementById('card-errors');
+			errorElement.textContent = result.error.message;
+			} else {
+			// Send the token to your server.
+			stripeTokenHandler(result.token);
+			}
+		});
+		});
+
+		function stripeTokenHandler(token) {
+		// Insert the token ID into the form so it gets submitted to the server
+		var form = document.getElementById('payment-form');
+		var hiddenInput = document.createElement('input');
+		hiddenInput.setAttribute('type', 'hidden');
+		hiddenInput.setAttribute('name', 'stripeToken');
+		hiddenInput.setAttribute('value', token.id);
+		form.appendChild(hiddenInput);
+
+		// Submit the form
+		form.submit();
+		}
 	</script>
 </body>
 
